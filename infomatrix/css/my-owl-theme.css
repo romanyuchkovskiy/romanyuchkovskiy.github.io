@@ -1,0 +1,26 @@
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.owl-carousel .owl-nav button.owl-prev {
+	left: 150px;
+	background-image: url('../img/icons/left-arrow.svg');
+}
+.owl-carousel .owl-nav button.owl-next {
+	right: 150px;
+	background-image: url('../img/icons/right-arrow.svg');
+}
+/*.owl-carousel button.owl-dot {
+	height: 14px;
+	width: 14px;
+	left: 50%;
+	border-radius: 50px;
+	margin-right: 20px;
+	background-color: rgb(18,20,26);
+}*/
