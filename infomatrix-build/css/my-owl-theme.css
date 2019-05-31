@@ -1,0 +1,27 @@
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+	position: absolute;
+	margin-top: -100px;
+	height: 30px;
+	width: 30px;
+	transition: all 0.3s;
+}
+.owl-carousel .owl-nav button.owl-prev {
+	left: 50px;
+	background-image: url(../img/icons/left-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.owl-carousel .owl-nav button.owl-next {
+	left: 150px;
+	background-image: url(../img/icons/right-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.owl-carousel .owl-nav button.owl-prev:hover {
+	opacity: 0.5;
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+	opacity: 0.5;
+}
