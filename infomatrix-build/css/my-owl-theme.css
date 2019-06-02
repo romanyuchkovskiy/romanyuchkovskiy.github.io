@@ -1,8 +1,8 @@
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
 	position: absolute;
 	margin-top: -100px;
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	transition: all 0.3s;
 }
 .owl-carousel .owl-nav button.owl-prev {
@@ -24,4 +24,30 @@
 }
 .owl-carousel .owl-nav button.owl-next:hover {
 	opacity: 0.5;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+		margin-top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.owl-nav {
+		height: 40px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.owl-carousel .owl-nav button.owl-prev {
+		margin-right: 20px;
+	}
+	.owl-carousel .owl-nav button.owl-next {
+		margin-left: 70px;
+	}
 }
