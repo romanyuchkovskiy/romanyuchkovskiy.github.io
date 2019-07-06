@@ -17,22 +17,27 @@
 	<header class="header">
 		<div class="container">
 			<nav class="nav">
+				<div class="mobile-btn">
+					<span></span>
+				</div>
 				<ul class="nav--list">
 					<li class="nav--item"><a href="#services" class="nav--link">Услуги</a></li>
-					<li class="nav--item"><a href="#" class="nav--link">Контакты</a></li>
+					<li class="nav--item"><a href="#contacts" class="nav--link">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="header-wrapper">
 				<div class="header-main">
-					<h1 class="header--title">Сергей Романюк</h1>
-					<p class="header--subtitle">Верстка и разработка сайтов</p>
-					<div class="header--actions">
-						<a class="button-o header-view" href="#portfolio">
-							Посмотреть работы
-						</a>
-						<button class="button header-request">
-							Оставить заявку
-						</button>
+					<div class="header--text rellax">
+						<h1 class="header--title">Сергей Романюк</h1>
+						<p class="header--subtitle">Верстка и разработка сайтов</p>
+						<div class="header--actions">
+							<a class="button-o header-view" href="#portfolio">
+								Посмотреть работы
+							</a>
+							<button class="button header-request">
+								Оставить заявку
+							</button>
+						</div>
 					</div>
 					<div class="header--social">
 						<h3 class="header--social__title">
@@ -127,7 +132,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="header--last">
+				<div class="header--last rellax">
 					<h2 class="header--last__title">
 						Последний реализованный 
 						проект
@@ -137,9 +142,7 @@
 						<div class="header--last__text">
 							<h3 class="header--last__name">Infomatrix</h3>
 							<p class="header--last__descr">
-								разработка сайта 
-								для организации занимающейся 
-								IT конкурсами по Украине
+								IT конкурсы по Украине
 							</p>
 						</div>
 						<div class="header--last__action">
@@ -159,9 +162,7 @@
 					<div class="portfolio--text">
 						<h3 class="portfolio--name">Infomatrix</h3>
 						<p class="portfolio--descr">
-							разработка сайта 
-							для организации занимающейся 
-							IT конкурсами по Украине
+							IT конкурсы по Украине
 						</p>
 					</div>
 					<div class="portfolio--action">
@@ -173,9 +174,7 @@
 					<div class="portfolio--text">
 						<h3 class="portfolio--name">Сайт-портфолио</h3>
 						<p class="portfolio--descr">
-							разработка собственного
-							сайта портфолио на котором 
-							вы сейчас находитесь
+							собственный сайт-портфолио
 						</p>
 					</div>
 					<div class="portfolio--action">
@@ -187,9 +186,7 @@
 					<div class="portfolio--text">
 						<h3 class="portfolio--name">Infomatrix</h3>
 						<p class="portfolio--descr">
-							разработка сайта 
-							для организации занимающейся 
-							IT конкурсами по Украине
+							IT конкурсы по Украине
 						</p>
 					</div>
 					<div class="portfolio--action">
@@ -260,7 +257,7 @@
 			</ul>
 		</div>
 	</section>
-	<footer class="footer">
+	<footer class="footer" id="contacts">
 		<div class="container">
 			<div class="footer--wrapper">
 				<div class="footer--section">
@@ -383,69 +380,67 @@
 		</div>
 	</footer>
 	<div class="modal" id="modal-1">
-		<div class="overlay">
-			<div class="container">
-				<div class="modal-body">
-					<h2 class="modal-title">Заявка на верстку</h2>
-					<form action="#" class="modal-form">
-						<div class="modal-wrapper">
-							<input type="text" placeholder="Имя" class="modal-input">
-							<input type="text" placeholder="Фамилия" class="modal-input">
-						</div>
-						<textarea placeholder="Напишите несколько слов о сайте который вы хотите получить" class="modal-text"></textarea>
-						<div class="modal-settings">
-							<label for="set-wp" class="modal-setting">
-								Установка на CMS Wordpress
-								<input type="radio" id="set-wp">
-							</label>
-							<label for="set-yg" class="modal-setting">
-								Подключение на сайт Яндекс Метрики, Google Analytics и т.д
-								<input type="radio" id="set-yg">
-							</label>
-							<label for="set-smart" class="modal-setting">
-								Адаптив под смартфоны (320, 578 px)
-								<input type="radio" id="set-smart">
-							</label>
-							<label for="set-tablet" class="modal-setting">
-								Адаптив под планшеты (768, 992, 1200 px)
-								<input type="radio" id="set-tablet">
-							</label>
-						</div>
-						<div class="modal-action">
-							<button type="submit" action="#" class="button modal-button">Оставить заявку</button>
-						</div>
-					</form>
-				</div>
+		<div class="container">
+			<div class="modal-body">
+				<h2 class="modal-title">Заявка на верстку</h2>
+				<form action="#" class="modal-form">
+					<div class="modal-wrapper">
+						<input type="text" placeholder="Имя" class="modal-input">
+						<input type="text" placeholder="Фамилия" class="modal-input">
+					</div>
+					<textarea placeholder="Напишите несколько слов о сайте который вы хотите получить" class="modal-text"></textarea>
+					<div class="modal-settings">
+						<label for="set-wp" class="modal-setting">
+							Установка на CMS Wordpress
+							<input type="checkbox" id="set-wp">
+						</label>
+						<label for="set-yg" class="modal-setting">
+							Подключение на сайт Яндекс Метрики, Google Analytics и т.д
+							<input type="checkbox" id="set-yg">
+						</label>
+						<label for="set-smart" class="modal-setting">
+							Адаптив под смартфоны (320, 578 px)
+							<input type="checkbox" id="set-smart">
+						</label>
+						<label for="set-tablet" class="modal-setting">
+							Адаптив под планшеты (768, 992, 1200 px)
+							<input type="checkbox" id="set-tablet">
+						</label>
+					</div>
+					<div class="modal-action">
+						<button type="submit" action="#" class="button modal-button">Оставить заявку</button>
+					</div>
+				</form>
 			</div>
-			<div class="modal-close">
-				&times;
-			</div>
+		</div>
+		<div class="modal-close">
+			&times;
 		</div>
 	</div>
 	<div class="modal" id="modal-2">
-		<div class="overlay">
-			<div class="container">
-				<div class="modal-body">
-					<h2 class="modal-title">Заявка на разработку</h2>
-					<form action="#" class="modal-form">
-						<div class="modal-wrapper">
-							<input type="text" placeholder="Имя" class="modal-input">
-							<input type="text" placeholder="Фамилия" class="modal-input">
-						</div>
-						<textarea placeholder="Напишите несколько слов о сайте который вы хотите получить" class="modal-text"></textarea>
-						<div class="modal-action">
-							<button type="submit" action="#" class="button modal-button">Оставить заявку</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="modal-close">
-				&times;
+		<div class="container">
+			<div class="modal-body">
+				<h2 class="modal-title">Заявка на разработку</h2>
+				<form action="#" class="modal-form">
+					<div class="modal-wrapper">
+						<input type="text" placeholder="Имя" class="modal-input">
+						<input type="text" placeholder="Фамилия" class="modal-input">
+					</div>
+					<textarea placeholder="Напишите несколько слов о сайте который вы хотите получить" class="modal-text"></textarea>
+					<div class="modal-action">
+						<button type="submit" action="#" class="button modal-button">Оставить заявку</button>
+					</div>
+				</form>
 			</div>
 		</div>
+		<div class="modal-close">
+			&times;
+		</div>
 	</div>
+	<div class="overlay"></div>
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/scrollToId/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="libs/rellax/rellax.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
