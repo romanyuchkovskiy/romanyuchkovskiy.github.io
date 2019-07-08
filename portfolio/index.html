@@ -12,14 +12,12 @@
 	
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/animate/animate.min.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<nav class="nav">
-				<div class="mobile-btn">
-					<span></span>
-				</div>
 				<ul class="nav--list">
 					<li class="nav--item"><a href="#services" class="nav--link">Услуги</a></li>
 					<li class="nav--item"><a href="#contacts" class="nav--link">Контакты</a></li>
@@ -132,21 +130,23 @@
 						</ul>
 					</div>
 				</div>
-				<div class="header--last rellax">
+				<div class="header--last rellax animated bounce">
 					<h2 class="header--last__title">
 						Последний реализованный 
 						проект
 					</h2>
-					<div class="header--last__item">
-						<div class="header--last__img"><img src="img/works/work-1.jpg" alt="Infomatrix"></div>
-						<div class="header--last__text">
-							<h3 class="header--last__name">Infomatrix</h3>
-							<p class="header--last__descr">
-								IT конкурсы по Украине
-							</p>
-						</div>
-						<div class="header--last__action">
-							<a href="#" class="button header--last__link">Перейти на сайт</a>
+					<div class="header--last__items">
+						<div class="header--last__item">
+							<div class="header--last__img"><img src="img/works/work-1.jpg" alt="Infomatrix"></div>
+							<div class="header--last__text">
+								<h3 class="header--last__name">Infomatrix</h3>
+								<p class="header--last__descr">
+									IT конкурсы по Украине
+								</p>
+							</div>
+							<div class="header--last__action">
+								<a href="#" class="button header--last__link">Перейти на сайт</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -157,7 +157,7 @@
 		<div class="container">
 			<h2 class="section-title portfolio-title">Портфолио</h2>
 			<ul class="portfolio--works">
-				<li class="portfolio--work">
+				<li class="portfolio--work wow bounceInLeft">
 					<div class="portfolio--preview"><img src="img/works/work-1.jpg" alt="Infomatrix"></div>
 					<div class="portfolio--text">
 						<h3 class="portfolio--name">Infomatrix</h3>
@@ -169,7 +169,7 @@
 						<a href="https://romanyuchkovskiy.github.io/infomatrix-build/" class="button portfolio--link">Перейти на сайт</a>
 					</div>
 				</li>
-				<li class="portfolio--work">
+				<li class="portfolio--work wow bounceInDown">
 					<div class="portfolio--preview"><img src="img/works/work-3.jpg" alt="Infomatrix"></div>
 					<div class="portfolio--text">
 						<h3 class="portfolio--name">Сайт-портфолио</h3>
@@ -181,7 +181,7 @@
 						<a href="#" class="button portfolio--link">Перейти на сайт</a>
 					</div>
 				</li>
-				<li class="portfolio--work">
+				<li class="portfolio--work wow bounceInRight">
 					<div class="portfolio--preview"><img src="img/works/work-1.jpg" alt="Infomatrix"></div>
 					<div class="portfolio--text">
 						<h3 class="portfolio--name">Infomatrix</h3>
@@ -203,8 +203,7 @@
 				<ul class="services--list">
 					<li class="services--header">
 						<h3 class="services--title">
-							Верстка
-	
+							Верстка 
 						</h3>
 					</li>
 					<li class="services--item">Верстка (адаптивная)</li>
@@ -215,8 +214,7 @@
 				<ul class="services--list">
 					<li class="services--head">
 						<h3 class="services--title">
-							Разработка
-							«под ключ»
+							Разработка «под ключ»
 						</h3>
 					</li>
 					<li class="services--item">Составление технического задания (ТЗ)</li>
@@ -236,7 +234,7 @@
 					<li class="services--item">Установка на сайт разных мелочей: слейдеры, галереи, настройка отправки заявок</li>
 					<li class="services--item">Создание адаптива сайта</li>
 					<li class="services--item">Загрузить сайт на хостинг</li>
-					<li class="services--item">Установка готового сайта на CMS Wordpress</li>
+					<li class="services--item">Установка сайта на CMS Wordpress</li>
 					<li class="services--item">Подключение на сайт  Яндекс Метрики, Google Analytics и т.д</li>
 					<li class="services--action"><a href="#" class="button services--link" id="order-build">Заказать услуги</a></li>
 				</ul>
@@ -245,13 +243,13 @@
 	</section>
 	<section class="question">
 		<div class="container">
-			<h2 class="section-title">Остались вопросы?</h2>
+			<h2 class="section-title wow bounceInLeft">Остались вопросы?</h2>
 			<ul class="question--cta">
-				<li class="question--item">
+				<li class="question--item wow bounceInUp">
 					<a href="#" class="button question--link">Задать вопрос</a>
 					<p class="question--descr">Сообщение будет отправлно мне на почту</p>
 				</li>
-				<li class="question--item">
+				<li class="question--item wow bounceInRight">
 					<a href="https://telegram.me/sergey_romanyuk" class="button question--write">Связаться в телеграм</a>
 				</li>
 			</ul>
@@ -441,6 +439,11 @@
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/scrollToId/jquery.malihu.PageScroll2id.min.js"></script>
 	<script src="libs/rellax/rellax.min.js"></script>
+	<script src="libs/wow/wow.min.js"></script>
+	<script src="libs/interactive-bg/jquery.particleground.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>

@@ -22,4 +22,13 @@ $(document).ready(function(){
 	    vertical: true,
 	    horizontal: false
 	});
+
+	$('.header--last').particleground({
+	    dotColor: '#5cbdaa',
+	    lineColor: '#5cbdaa'
+	});
+	$('.question').particleground({
+	    dotColor: '#5cbdaa',
+	    lineColor: '#0288d1'
+	});
 });
