@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 42px;
+        fill: #fcdb00;
+        text-anchor: middle;
+        font-family: FontAwesome;
+      }
+    </style>
+  </defs>
+  <text id="facebook.svg" class="cls-1" x="18.458" y="33.45"><tspan x="18.458"></tspan></text>
+</svg>

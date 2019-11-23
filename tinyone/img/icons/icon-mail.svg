@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="40" viewBox="0 0 51 40">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 30.491px;
+        fill: #010101;
+        text-anchor: middle;
+        font-family: FontAwesome;
+      }
+    </style>
+  </defs>
+  <text id="icon-mail.svg" class="cls-1" transform="translate(25 36.475) scale(1.653 1.64)"><tspan x="0"></tspan></text>
+</svg>
