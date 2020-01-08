@@ -14,3 +14,10 @@ close.onclick = function() {
 	tv.style.cssText = 'width: 0; height: 0'
 	overlay.style.display = 'none'
 }
+
+
+
+function copy(){
+  jsonScript.select();
+  document.execCommand('copy');
+}
