@@ -3,21 +3,29 @@ let
 	tv = document.getElementById('mainTv');
 	close = document.getElementById('close');
 	overlay = document.getElementById('overlayWindow');
+	menuOn = document.getElementById('menuOpen');
+	menuOff = document.getElementById('menuClose');
+	menuList = document.getElementById('menuList');
 
+tv.style.cssText = 'width: 0; height: 0'
 
 playedBtn.onclick = function() {
 	tv.style.cssText = 'width: 100%; height: 100%'
-	overlay.style.display = 'block'
+	// overlay.style.display = 'block'
 }
 
 close.onclick = function() {
 	tv.style.cssText = 'width: 0; height: 0'
-	overlay.style.display = 'none'
+	// overlay.style.display = 'none'
 }
 
-
-
-function copy(){
-  jsonScript.select();
-  document.execCommand('copy');
+//мобильное меню - открыть\скрыть
+menuOn.onclick = function() {
+	menuList.style.display = 'flex'
+	menuOn.style.display = 'none'
+	console.log('cliiiick');
+}
+menuOff.onclick = function() {
+	menuList.style.display = 'none'
+	menuOn.style.display = 'block'
 }
