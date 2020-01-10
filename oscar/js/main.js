@@ -11,12 +11,12 @@ tv.style.cssText = 'width: 0; height: 0'
 
 playedBtn.onclick = function() {
 	tv.style.cssText = 'width: 100%; height: 100%'
-	// overlay.style.display = 'block'
+	overlay.style.display = 'block'
 }
 
 close.onclick = function() {
 	tv.style.cssText = 'width: 0; height: 0'
-	// overlay.style.display = 'none'
+	overlay.style.display = 'none'
 }
 
 //мобильное меню - открыть\скрыть
