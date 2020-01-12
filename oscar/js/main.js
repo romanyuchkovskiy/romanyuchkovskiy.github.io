@@ -6,6 +6,7 @@ let
 	menuOn = document.getElementById('menuOpen');
 	menuOff = document.getElementById('menuClose');
 	menuList = document.getElementById('menuList');
+	videoMain = document.getElementById('mainVideo');
 
 tv.style.cssText = 'width: 0; height: 0'
 
@@ -16,6 +17,7 @@ playedBtn.onclick = function() {
 
 close.onclick = function() {
 	tv.style.cssText = 'width: 0; height: 0'
+	videoMain.src = 'dwdwdwdwdwdwdw'
 	overlay.style.display = 'none'
 }
 
