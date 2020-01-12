@@ -12,6 +12,7 @@ tv.style.cssText = 'width: 0; height: 0'
 
 playedBtn.onclick = function() {
 	tv.style.cssText = 'width: 100%; height: 100%'
+	videoMain.src = 'https://www.youtube.com/embed/GwaS5lc1Mxg'
 	overlay.style.display = 'block'
 }
 
