@@ -1,0 +1,28 @@
+.owl-dots {
+	position: absolute;
+	bottom: 140px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.owl-carousel .owl-dot {
+	height: 8px;
+	width: 8px;
+	background-color: red!important;
+}
+.owl-stage-outer {
+	height: 100%;
+}
+.owl-stage {
+	height: 100%;
+
+}
+.owl-item {
+	height: 100%;
+
+}
