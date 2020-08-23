@@ -195,8 +195,8 @@ section {
 
 .nav-link {
   font-family: 'Ubuntu';
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
   color: #ffffff;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
