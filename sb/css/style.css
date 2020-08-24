@@ -1,95 +1,36 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+.s-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
+.s-title {
+  width: 400px;
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  line-height: 1.17;
 }
 
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-.title-s {
-  font-size: 70px;
-  color: #F2A21E;
-  text-align: center;
+.s-subtitle {
+  width: 346px;
+  line-height: 1.35;
   font-weight: 400;
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: transparent;
-  border: 4px solid #F2A21E;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 400;
-  padding: 30px 74px;
-  position: relative;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
-}
-
-.button::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
-  z-index: -1;
-  left: -10px;
-  bottom: -10px;
-  background-color: #ffffff;
-  opacity: 0;
-}
-
-.button:hover {
-  background-color: #F2A21E;
-}
-
-.button:hover::before {
-  opacity: 1;
+  background-color: #262626;
+  background-color-color: #ffffff;
+  background-color-padding: 17px 100px;
+  background-color-font-size: 16px;
+  background-color-font-weight: 400;
+  background-color-display: flex;
+  background-color-justify-content: center;
+  background-color-align-items: center;
 }
 
 * {
@@ -101,7 +42,6 @@ body, html {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: 'Ubuntu';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,11 +92,12 @@ p {
 
 section {
   margin: 0;
-  padding: 100px 0px;
+  padding: 116px 0px;
+  border-top: 1px solid #e0e0e0;
 }
 
 .container {
-  width: 1310px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
   padding-left: 15px;
@@ -165,165 +106,4 @@ section {
 
 .hidden {
   display: none;
-}
-
-.nav {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-item {
-  margin-right: 20px;
-}
-
-.nav-link {
-  font-family: 'Ubuntu';
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
-}
-
-.nav-link:hover {
-  color: #F2A21E;
-}
-
-.header {
-  background-image: url("../img/bg/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 2;
-}
-
-.header::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.header-text {
-  width: 993px;
-  padding-top: 215px;
-  padding-bottom: 215px;
-  padding-left: 110px;
-}
-
-.header-title {
-  color: #ffffff;
-  font-size: 55px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-bottom: 37px;
-}
-
-.header-title span {
-  color: #F2A21E;
-  display: block;
-  font-size: 35px;
-  font-weight: 300;
-  width: 640px;
-}
-
-.services {
-  background-color: #112130;
-  position: relative;
-}
-
-.services::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  background-image: url("../img/bg/ave.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: -90px;
-  z-index: 999;
-}
-
-.services-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.services-item {
-  width: 420px;
-  margin-bottom: 140px;
-  padding: 101px 0px;
-  position: relative;
-  z-index: 1;
-}
-
-.services-img {
-  position: absolute;
-  z-index: -1;
-  top: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.services-img img {
-  width: 100%;
-}
-
-.services-name {
-  font-size: 30px;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
-  position: relative;
-}
-
-.services-name::after {
-  content: '';
-  display: block;
-  width: 251px;
-  height: 10px;
-  position: absolute;
-  left: 50%;
-  margin-top: 10px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-image: url("../img/bg/line.png");
 }
