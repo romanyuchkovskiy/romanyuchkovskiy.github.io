@@ -7,12 +7,12 @@
 }
 .partners-slider .owl-nav .owl-next {
     right: 30px;
-    background-image: url('../../img/icons/slider-next.png')!important;
+    background-image: url('../img/icons/slider-next.png')!important;
     background-size: 100%;
 }
 .partners-slider .owl-nav .owl-prev {
     left: -40px;
-    background-image: url('../../img/icons/slider-prev.png')!important;
+    background-image: url('../img/icons/slider-prev.png')!important;
     background-size: 100%;
 }
 .partners-slider .owl-dots {
