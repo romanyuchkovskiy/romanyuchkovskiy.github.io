@@ -8,7 +8,8 @@ $(document).ready(function(){
     $(".partners-slider").owlCarousel({
 		items: 3,
 		nav: true,
-		dots: true,
+        dots: true,
+        loop: true,
         navText: ['',''],
         responsiveClass: true,
         responsive: {
@@ -21,7 +22,21 @@ $(document).ready(function(){
                 items: 1,
                 nav: true,
                 dots: false
+            },
+            1200:{
+                items: 3,
+                nav: true,
+                dots: true
             }
         }
+    });
+    $('#openMobile').on('click', function(){
+        $('#listMenu').show(300);
+    });
+    $('#closeMenu').on('click', function(){
+        $('#listMenu').hide(300);
+    });
+    $('#listMenu .nav-list .nav-link').click(function(){
+		$('#listMenu').hide(300);
 	});
 });
