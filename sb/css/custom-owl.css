@@ -8,11 +8,13 @@
 .partners-slider .owl-nav .owl-next {
     right: 30px;
     background-image: url('../img/icons/slider-next.png')!important;
+    background-repeat: no-repeat!important;
     background-size: 100%;
 }
 .partners-slider .owl-nav .owl-prev {
     left: -40px;
     background-image: url('../img/icons/slider-prev.png')!important;
+    background-repeat: no-repeat!important;
     background-size: 100%;
 }
 .partners-slider .owl-dots {
@@ -38,4 +40,20 @@
     border: 3px solid #F2A21E!important;
     background-color: #fff!important;
     opacity: 1;
+}
+@media only screen and (min-width: 320px) and (max-width: 578px) {
+    .partners-slider .owl-nav .owl-next,  .owl-nav .owl-prev {
+        width: 18px;
+        height: 20px;
+        top: 70px;
+    }
+
+    .partners-slider .owl-nav .owl-next {
+        right: 0;
+        background-size: 15px 18px!important;
+    }
+    .partners-slider .owl-nav .owl-prev {
+        left: 0;
+        background-size: 15px 18px!important;
+    }
 }
