@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Raleway';
-  src: url("../../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../../fonts/Raleway/Raleway-Medium.woff") format("woff");
+  src: url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Regular.woff") format("woff");
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
+  src: url("../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
+  src: url("../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -208,7 +208,7 @@ section {
 }
 
 .header {
-  background-image: url("../../img/bg/header-bg.jpg");
+  background-image: url("../img/bg/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -263,7 +263,7 @@ section {
   position: absolute;
   width: 100%;
   height: 14%;
-  background-image: url(../../img/bg/ave.png);
+  background-image: url(../img/bg/ave.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@ section {
   position: absolute;
   width: 100%;
   height: 26%;
-  background-image: url("../../img/bg/wave-2.png");
+  background-image: url("../img/bg/wave-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -340,7 +340,7 @@ section {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../../img/bg/line.png");
+  background-image: url("../img/bg/line.png");
 }
 
 .benefits {
@@ -383,7 +383,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../../img/bg/title-line.png");
+  background-image: url("../img/bg/title-line.png");
   right: -206px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -470,7 +470,7 @@ section {
 }
 
 .steps {
-  background: url("../../img/bg/steps-bg.png") no-repeat;
+  background: url("../img/bg/steps-bg.png") no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -560,7 +560,7 @@ section {
   top: 30px;
   width: 550px;
   height: 80px;
-  background-image: url("../../img/bg/cl-1.png");
+  background-image: url("../img/bg/cl-1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -604,7 +604,7 @@ section {
   right: -190px;
   width: 550px;
   height: 120px;
-  background-image: url("../../img/bg/cl-2.png");
+  background-image: url("../img/bg/cl-2.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -644,7 +644,7 @@ section {
   left: -542px;
   width: 550px;
   height: 120px;
-  background-image: url("../../img/bg/cl-3.png");
+  background-image: url("../img/bg/cl-3.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -662,7 +662,7 @@ section {
   position: absolute;
   left: 0;
   top: 380px;
-  background-image: url("../../img/bg/team-bg.png");
+  background-image: url("../img/bg/team-bg.png");
   background-size: 100% 90%;
   z-index: -2;
   background-repeat: no-repeat;
@@ -691,7 +691,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../../img/bg/title-line.png");
+  background-image: url("../img/bg/title-line.png");
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -708,7 +708,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../../img/bg/title-line.png");
+  background-image: url("../img/bg/title-line.png");
   right: -256px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -846,7 +846,7 @@ section {
   height: 15px;
   position: absolute;
   left: 0;
-  background-image: url("../../img/bg/line-2.png");
+  background-image: url("../img/bg/line-2.png");
   background-repeat: no-repeat;
 }
 
