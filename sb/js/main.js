@@ -11,12 +11,13 @@ $(document).ready(function(){
 		dots: true,
         navText: ['',''],
         responsiveClass: true,
-        responsive:{
-            0:{
+        responsive: {
+            320:{
                 items: 1,
-                nav: true
+                nav: true,
+                dots: false
             },
-            768:{
+            578:{
                 items: 1,
                 nav: true,
                 dots: false
