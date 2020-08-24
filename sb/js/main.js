@@ -9,6 +9,18 @@ $(document).ready(function(){
 		items: 3,
 		nav: true,
 		dots: true,
-		navText: ['','']
+        navText: ['',''],
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true
+            },
+            768:{
+                items: 1,
+                nav: true,
+                dots: false
+            }
+        }
 	});
 });
