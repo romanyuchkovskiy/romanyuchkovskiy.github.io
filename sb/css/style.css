@@ -37,7 +37,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 .title-s {
   font-size: 70px;
   color: #F2A21E;
@@ -152,7 +151,7 @@ p {
 
 section {
   margin: 0;
-  padding: 150px 0px;
+  padding: 90px 0px;
 }
 
 .container {
@@ -206,7 +205,28 @@ section {
 .nav-link:hover {
   color: #F2A21E;
 }
-
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50%;
+  background-color: #F2A21E;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+.lang a:hover {
+  box-shadow: 0px 0px 70px 0px rgba(242, 162, 30, 0.4)
+}
 .mobile-menu {
   display: none;
 }
@@ -222,7 +242,7 @@ section {
   background-size: cover;
   position: relative;
   z-index: 2;
-  height: 990px;
+  height: 890px;
 }
 
 .header::before {
@@ -239,8 +259,8 @@ section {
 
 .header-text {
   width: 993px;
-  padding-top: 215px;
-  padding-bottom: 215px;
+  padding-top: 120px;
+  padding-bottom: 120x;
   padding-left: 110px;
 }
 
@@ -284,12 +304,12 @@ section {
   display: block;
   position: absolute;
   width: 100%;
-  height: 26%;
+  height: 32%;
   background-image: url("../img/bg/wave-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  bottom: -218px;
+  bottom: -185px;
   z-index: 2;
 }
 
@@ -309,7 +329,7 @@ section {
 
 .services-item {
   width: 420px;
-  margin-bottom: 140px;
+  margin-bottom: 60px;
   padding: 101px 0px;
   position: relative;
   z-index: 1;
@@ -415,7 +435,7 @@ section {
 .benefits-item {
   cursor: pointer;
   border: 5px solid #112130;
-  padding: 82px 30px;
+  padding: 42px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,8 +450,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 527px;
-  margin-bottom: 116px;
+  width: 487px;
+  margin-bottom: 40px;
   height: 491px;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
@@ -462,7 +482,7 @@ section {
 }
 
 .benefits-img {
-  height: 206px;
+  height: 149px;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
   transition: .2s linear;
@@ -482,14 +502,14 @@ section {
   background-size: cover;
   position: relative;
   z-index: 1;
-  padding: 200px 0px;
-  padding-bottom: 290px;
+  padding: 130px 0px;
+  padding-bottom: 90px;
   -webkit-clip-path: polygon(0 10%, 0 91%, 100% 100%, 100% 0);
   clip-path: polygon(0 10%, 0 91%, 100% 100%, 100% 0);
 }
 
 .steps .title-s {
-  margin-bottom: 190px;
+  margin-bottom: 90px;
 }
 
 .steps::before {
@@ -656,7 +676,9 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+.en-class {
+  font-size: 26px;
+}
 .team {
   position: relative;
   z-index: 1;
@@ -793,7 +815,7 @@ section {
 }
 
 .partners .title-s {
-  margin-bottom: 105px;
+  /* margin-bottom: 30px; */
 }
 
 .partners-slider {
@@ -803,10 +825,11 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -50px;
 }
 
 .partners-slide {
-  padding-top: 120px;
+  padding-top: 109px;
   height: 200px;
   margin-right: 90px;
 }
@@ -820,7 +843,8 @@ section {
   background-color: #112130;
   color: #ffffff;
   font-family: 'Raleway';
-  padding: 140px 0px;
+  padding: 30px 0px;
+  padding-top: 50px;
 }
 
 .footer-wrap {
@@ -854,7 +878,7 @@ section {
 .footer-title {
   font-weight: 500;
   font-size: 25px;
-  margin-bottom: 97px;
+  margin-bottom: 47px;
   position: relative;
 }
 
@@ -965,6 +989,17 @@ section {
     height: 100%;
     -o-object-fit: fill;
        object-fit: fill;
+  }
+  .lang {
+    position: absolute;
+    right: 60px;
+    top: 30px;
+  }
+  .lang a {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
   }
   .mobile-menu {
     display: block;
