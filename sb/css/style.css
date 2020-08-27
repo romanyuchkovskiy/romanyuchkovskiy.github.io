@@ -58,7 +58,7 @@
   background-color: transparent;
   border: 4px solid #F2A21E;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   padding: 30px 74px;
   position: relative;
@@ -242,7 +242,7 @@ section {
   background-size: cover;
   position: relative;
   z-index: 2;
-  height: 890px;
+  height: 649px;
 }
 
 .header::before {
@@ -259,7 +259,7 @@ section {
 
 .header-text {
   width: 993px;
-  padding-top: 120px;
+  padding-top: 70px;
   padding-bottom: 120x;
   padding-left: 110px;
 }
