@@ -688,21 +688,13 @@ section {
 .team {
   position: relative;
   z-index: 1;
-  padding: 60px 0px;
+  background-color: #112130;
+  color: #ffffff;
 }
 
-.team::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 380px;
-  background-image: url("../img/bg/team-bg.png");
-  background-size: 100% 90%;
-  z-index: -2;
-  background-repeat: no-repeat;
+.team .title-s {
+  color: #ffffff;
+  margin-bottom: 90px;
 }
 
 .team-subtitle {
@@ -728,7 +720,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../img/bg/title-line.png");
+  background-image: url("../../img/bg/title-line.png");
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -745,7 +737,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../img/bg/title-line.png");
+  background-image: url("../../img/bg/title-line.png");
   right: -256px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -754,7 +746,7 @@ section {
 }
 
 .team-img {
-  border: 3px solid #F2A21E;
+  border: 3px solid #ffffff;
   width: 322px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,7 +769,7 @@ section {
   top: -60px;
   height: 140px;
   width: 3px;
-  background-color: #F2A21E;
+  background-color: #ffffff;
   z-index: -1;
 }
 
@@ -788,7 +780,7 @@ section {
   bottom: -60px;
   height: 140px;
   width: 3px;
-  background-color: #F2A21E;
+  background-color: #ffffff;
   z-index: -1;
 }
 
@@ -800,21 +792,32 @@ section {
 .team-name {
   font-size: 58px;
   margin-bottom: 45px;
+  color: #ffffff;
 }
 
 .team-text {
-  width: 860px;
+  width: 660px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.1;
   font-weight: 400;
   color: #ffffff;
 }
 
 .team-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .button {
+  margin-top: 50px;
 }
 
 
