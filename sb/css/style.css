@@ -378,7 +378,7 @@ section {
 }
 
 .benefits {
-  padding-top: 290px;
+  padding-top: 70px;
 }
 
 .benefits .title-s {
@@ -417,7 +417,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../img/bg/title-line.png");
+  background-image: url("../../img/bg/title-line.png");
   right: -206px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -441,7 +441,7 @@ section {
 .benefits-item {
   cursor: pointer;
   border: 5px solid #112130;
-  padding: 42px 25px;
+  padding: 82px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,8 +456,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 487px;
-  margin-bottom: 40px;
+  width: 527px;
+  margin-bottom: 116px;
   height: 491px;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
@@ -488,7 +488,7 @@ section {
 }
 
 .benefits-img {
-  height: 149px;
+  height: 206px;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
   transition: .2s linear;
