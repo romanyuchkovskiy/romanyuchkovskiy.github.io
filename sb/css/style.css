@@ -306,7 +306,7 @@ section {
   position: absolute;
   width: 100%;
   height: 37%;
-  background-image: url("../../img/bg/wave-2.png");
+  background-image: url("../img/bg/wave-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ section {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../../img/bg/line.png");
+  background-image: url("../img/bg/line.png");
 }
 
 .benefits {
@@ -417,7 +417,7 @@ section {
   position: absolute;
   width: 256px;
   height: 1px;
-  background-image: url("../../img/bg/title-line.png");
+  background-image: url("../img/bg/title-line.png");
   right: -206px;
   top: 50%;
   -webkit-transform: translateY(-50%);
