@@ -1281,6 +1281,9 @@ section {
   }
   .team-content {
     width: 100%;
+    flex-direction: column:
+    align-items: center;
+    justify-content: center;
   }
   .team-subtitle {
     width: 100%;
