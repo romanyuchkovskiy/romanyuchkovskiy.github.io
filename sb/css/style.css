@@ -292,7 +292,7 @@ section {
 
 .services::before {
   content: '';
-  display: noe;
+  display: none;
   position: absolute;
   width: 100%;
   height: 17%;
