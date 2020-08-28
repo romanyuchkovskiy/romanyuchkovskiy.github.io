@@ -439,14 +439,11 @@ section {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .benefits-item {
+  width: 327px;
   cursor: pointer;
-  border: 5px solid #112130;
-  padding: 82px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,16 +458,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 527px;
   margin-bottom: 116px;
-  height: 491px;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
   transition: .2s linear;
-}
-
-.benefits-item:hover {
-  border: 5px solid #F2A21E;
 }
 
 .benefits-item:hover .benefits-img svg {
@@ -482,10 +473,11 @@ section {
 }
 
 .benefits-title {
-  width: 446px;
+  width: 100%;
+  height: 66px;
   color: #112130;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.1;
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
@@ -1173,6 +1165,8 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .benefits-item {
     width: 135px;
