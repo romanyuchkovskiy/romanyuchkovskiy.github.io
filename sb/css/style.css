@@ -885,13 +885,13 @@ section {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
 }
 
 .footer-title {
   font-weight: 500;
   font-size: 25px;
-  margin-bottom: 47px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -932,7 +932,7 @@ section {
 }
 
 .footer-phone a:hover {
-  color: #F2A21E;
+  color: #d99a32;
 }
 
 .footer-mail {
@@ -950,7 +950,7 @@ section {
 }
 
 .footer-mail a:hover {
-  color: #F2A21E;
+  color: #d99a32;
 }
 
 .footer-copyright {
@@ -965,7 +965,7 @@ section {
 .footer-copyright__text {
   font-family: 'Ubuntu';
   width: 310px;
-  color: #a1a1a1;
+  color: #fff;
   font-size: 20px;
   line-height: 27px;
   margin-left: 10px;
