@@ -1130,11 +1130,11 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
-    padding: 61px 0px;
+    padding: 51px 0px;
     height: 190px;
   }
   .services-img {
-    top: 150px;
+    top: 120px;
     height: 100px;
 
   }
