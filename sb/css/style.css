@@ -253,7 +253,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(242, 162, 30,0.5);
+  background-color: rgba(242, 162, 30, 0.2);
   z-index: -1;
 }
 
@@ -531,7 +531,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(242, 162, 30,0.5);
+  background-color: rgba(242, 162, 30, 0.2);
   z-index: -1;
 }
 
