@@ -369,7 +369,7 @@ section {
 
 .services-name::after {
   content: '';
-  display: block;
+  display: none;
   width: 251px;
   height: 10px;
   position: absolute;
