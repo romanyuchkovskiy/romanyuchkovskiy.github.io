@@ -1281,7 +1281,7 @@ section {
   }
   .team-content {
     width: 100%;
-    flex-direction: column:
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
