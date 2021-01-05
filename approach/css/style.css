@@ -1,0 +1,213 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 100px 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.approach-items {
+  position: relative;
+}
+
+.approach-items::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -190px;
+  top: 0px;
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/dec-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.approach-item {
+  margin-bottom: 190px;
+}
+
+.approach-item .icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.approach-item .icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 77px;
+  width: 5px;
+  height: 230px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #E12B2B;
+  z-index: -1;
+}
+
+.approach-item .text {
+  width: 80%;
+  margin-left: 41px;
+}
+
+.approach-item:last-child .icon::after {
+  display: none;
+}
+
+.approach-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1A1A18;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.approach-title span {
+  color: #E12B2B;
+  margin-left: 5px;
+}
+
+.approach-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #404556;
+}
+
+.approach-text .title {
+  font-size: 52px;
+  font-weight: 800;
+  color: #1A1A18;
+  position: relative;
+}
+
+.approach-text .title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -300px;
+  top: 0px;
+  width: 600px;
+  height: 600px;
+  background-image: url("../img/dec-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 578px) {
+  .approach .sm-unfix {
+    position: unset !important;
+  }
+  .approach-items::before {
+    display: none;
+  }
+  .approach-text .title {
+    font-size: 21px;
+    margin-bottom: 32px;
+  }
+  .approach-text .title::before {
+    display: none;
+  }
+  .approach-item {
+    margin-bottom: 60px;
+  }
+  .approach-item .icon {
+    width: 54px;
+    height: 54px;
+  }
+  .approach-item .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .approach-item .icon::after {
+    top: 45px;
+    width: 3px;
+    height: 156px;
+  }
+  .approach-item .text {
+    margin-left: 22px;
+  }
+  .approach-title {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}
