@@ -304,13 +304,13 @@ section {
 
 .offer {
   background-color: #fafafa;
-/*   background-image: url("../img/bg/offer-bg.png");
+  background-image: url("../img/bg/offer-bg.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 43%; */
+  background-size: 43%;
   padding-bottom: 0;
 }
-.offer::after {
+/* .offer::after {
   content: '';
   display: block;
   position: absolute;
@@ -320,7 +320,7 @@ section {
   background-repeat: no-repeat;
   width: 43%;
   height: 900px;
-}
+} */
 .offer-text .page-title {
   width: 70%;
   margin-bottom: 46px;
