@@ -624,7 +624,6 @@ section {
     line-height: 1.6;
   }
 }
-
 .features {
   padding-top: 123px;
   padding-bottom: 140px;
@@ -639,9 +638,19 @@ section {
   color: #ffffff;
 }
 
+.features-list .dark:hover {
+  background-color: #6bf50f;
+  color: #0c0000;
+}
+
 .features-list .green {
   background-color: #6bf50f;
   color: #0c0000;
+}
+
+.features-list .green:hover {
+  background-color: #f3f3f3;
+  color: #222222;
 }
 
 .features-item {
@@ -651,6 +660,14 @@ section {
   min-height: 270px;
   margin-bottom: 41px;
   color: #0c0000;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.features-item:hover {
+  background-color: #212121;
+  color: #ffffff;
 }
 
 .features-num {
