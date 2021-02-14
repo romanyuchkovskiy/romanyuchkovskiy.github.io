@@ -1,37 +1,795 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Threemasks</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-	<style>
-		body, html {
-			font-family: 'Montserrat', sans-serif;
-		}
-		section {
-			padding: 300px 80px;
-		}
-		h1 {
-			font-size: 36px;
-			font-weight: 700;
-			text-align: center;
-		}
-		@media only screen and (max-width: 576px) {
-			section {
-				padding: 70px 15px;
-			}
-			h1 {
-				font-size: 25px;
-				text-align: left;
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon/fav-logo.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/custom-slider.css">
 </head>
 <body>
-	<section>
-		<h1>Привет. Скоро будут первые результаты работы</h1>
-	</section>
+    <header class="header">
+        <div class="bar">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="bar-addres">
+                            <img src="img/icons/map-mark.svg" alt="">
+                            Москва
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bar-info">
+                            <a class="bar-phone" href="tel:+7 929 622 88 80">
+                                <img src="img/icons/phone.svg" alt="">
+                                +7 929 622 88 80
+                            </a>
+                            <p class="bar-time">
+                                <img src="img/icons/clock.svg" alt="">
+                                Пн-Вс с 10.00 до 20.00
+                            </p>
+                            <a href="mailto:mask@mail.com" class="bar-mail">
+                                <img src="img/icons/mail.svg" alt="">
+                                mask@mail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    ОПТ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Что защищает?
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="user-block">
+                            <div class="cart">
+                                <div class="icon cart-icon">
+                                    <a href="cart.html">
+                                        <svg viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.93767 16.7805C5.88913 16.7269 5.90887 15.2521 6.93762 15.2009C9.85175 15.211 17.538 15.2036 20.5448 15.2057C21.3672 15.2057 22.0708 14.6461 22.2557 13.8449L23.9631 6.4515C24.0609 6.02818 23.9622 5.59004 23.6924 5.2495C23.4227 4.90896 23.0188 4.7109 22.5844 4.7109C21.3748 4.7109 11.1072 4.66443 5.84819 4.64346L5.01454 1.55027C4.81442 0.811081 4.13986 0.294853 3.37407 0.294853H0.703499C0.31498 0.294853 0 0.609833 0 0.998352C0 1.38687 0.31498 1.70185 0.703499 1.70185H3.37407C3.50591 1.70185 3.62199 1.79073 3.65627 1.91722L6.85789 13.7958C6.29495 13.8163 5.77061 14.0453 5.37299 14.4487C4.95521 14.8727 4.73084 15.4339 4.74121 16.029C4.76194 17.2192 5.74726 18.1875 6.93767 18.1875H7.96346C7.81099 18.5075 7.7254 18.8653 7.7254 19.2428C7.7254 20.6005 8.82999 21.7051 10.1877 21.7051C11.5455 21.7051 12.6501 20.6005 12.6501 19.2428C12.6501 18.8653 12.5644 18.5075 12.412 18.1875H16.8541C16.7018 18.5074 16.6162 18.865 16.6162 19.2424C16.6162 20.6001 17.7209 21.7047 19.0786 21.7047C20.4363 21.7047 21.5409 20.6001 21.5409 19.2424C21.5409 18.8503 21.4484 18.4796 21.2847 18.1503C21.5631 18.0566 21.7638 17.794 21.7638 17.484C21.7638 17.0955 21.4488 16.7805 21.0603 16.7805H6.93767ZM11.243 19.2428C11.243 19.8247 10.7696 20.2981 10.1877 20.2981C9.60576 20.2981 9.13235 19.8247 9.13235 19.2428C9.13235 18.6612 9.60529 18.188 10.1868 18.1875H10.1886C10.7701 18.188 11.243 18.6612 11.243 19.2428ZM19.0786 20.2978C18.4967 20.2978 18.0233 19.8243 18.0233 19.2424C18.0233 18.6663 18.4875 18.1967 19.0615 18.1875H19.0958C19.6698 18.1967 20.134 18.6663 20.134 19.2424C20.134 19.8243 19.6605 20.2978 19.0786 20.2978ZM22.5895 6.12306C22.5937 6.12831 22.5931 6.1308 22.5922 6.13483L21.8728 9.25016H19.4367L19.8516 6.10679L22.5787 6.11776C22.5829 6.11785 22.5854 6.11785 22.5895 6.12306ZM15.3367 13.7987V10.6572H17.8319L17.4173 13.7987H15.3367ZM11.8482 13.7987L11.4302 10.6572H13.9297V13.7987H11.8482ZM8.6096 13.7987H8.6074C8.43593 13.7987 8.28487 13.683 8.24027 13.5182L7.46914 10.6572H10.0108L10.4288 13.7987H8.6096ZM11.243 9.25021L10.8199 6.07044L13.9296 6.08296V9.25021H11.243ZM15.3367 9.25021V6.08863L18.4331 6.10111L18.0175 9.25021H15.3367ZM9.39973 6.06467L9.82356 9.25016H7.08991L6.22789 6.05187L9.39973 6.06467ZM20.5448 13.7987H18.8364L19.251 10.6572H21.5478L20.8848 13.5282C20.848 13.6875 20.7082 13.7987 20.5448 13.7987Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="counter">
+                                        0
+                                    </div>
+                                    <div class="price">
+                                        0 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="button nav-button">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="offer">
+        <div class="container">
+            <div class="row justify-content-between align-items-start">
+                <div class="col-lg-5">
+                    <div class="offer-text">
+                        <h1 class="offer-title">
+                            Сертифицированные
+                            маски-респираторы
+                        </h1>
+                        <p class="offer-description">
+                            В наличии с доставкой за 2 часа и оплатой
+                            по факту получения
+                        </p>
+                        <div class="offer-features">
+                            <div class="offer-feature">
+                                <div class="icon">
+                                    <img src="img/offer-ft-1.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>
+                                        Самовывоз и отгрузки
+                                    </h3>
+                                    <p>
+                                        Обладая фирменным магазином, предоставляем  возможность осуществить самовывоз.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="offer-feature">
+                                <div class="icon">
+                                    <img src="img/offer-ft-2.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>
+                                        Лучшие цены, оптовые продажи
+                                    </h3>
+                                    <p>
+                                        Являемся прямым импортером
+                                        и производителем.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="offer-feature">
+                                <div class="icon">
+                                    <img src="img/offer-ft-3.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>
+                                        Оригинальная продукция
+                                    </h3>
+                                    <p>
+                                        Каждый респиратор имеет сертификат соответствия, что доказывает оригинальность продукции.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="offer-feature">
+                                <div class="icon">
+                                    <img src="img/offer-ft-4.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>
+                                        Защита до 99%
+                                    </h3>
+                                    <p>
+                                        Респираторы применяются как при защите от COVID-19, так и в производственных и строительных целях.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="offer-sentence">
+                            Ознакомьтесь  с нашим коммерческим предложением 3Маски КП
+                            <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.3536 4.35355C23.5488 4.15829 23.5488 3.84171 23.3536 3.64645L20.1716 0.464466C19.9763 0.269204 19.6597 0.269204 19.4645 0.464466C19.2692 0.659728 19.2692 0.976311 19.4645 1.17157L22.2929 4L19.4645 6.82843C19.2692 7.02369 19.2692 7.34027 19.4645 7.53553C19.6597 7.7308 19.9763 7.7308 20.1716 7.53553L23.3536 4.35355ZM0 4.5H23V3.5H0V4.5Z" fill="#3C39D0">
+                            </svg>
+                        </a>
+                        <div class="offer-actions">
+                            <a href="#" class="button offer-go">Перейти в каталог</a>
+                            <div class="offer-play">
+                                <div class="icon" id="offerPlayBtn">
+                                    <img src="img/icons/play.svg" alt="">
+                                </div>
+                                Смотреть видео-презентацию
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="offer-img">
+                        <img src="img/offer-img-maksk-1.jpg" alt="wwdw">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stock">
+        <div class="container">
+            <div class="stock-categories">
+                <h2 class="title">Каталог в наличии</h2>
+                <div class="category-item active">
+                    Все товары
+                </div>
+                <div class="category-item">
+                    Бренды
+                </div>
+                <div class="category-item">
+                    FFP1
+                </div>
+                <div class="category-item">
+                    FFP2
+                </div>
+                <div class="category-item">
+                    FFP3
+                </div>
+                <div class="category-item">
+                    3M
+                </div>
+                <div class="category-item">
+                    Алина
+                </div>
+                <div class="category-item">
+                    Spirotek
+                </div>
+                <div class="category-item">
+                    KN95
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <div class="slider-imgs">
+                        <div class="slide">
+                            <img src="img/product-img.png" alt="">
+                        </div>
+                        <div class="product-status">
+                            <div class="new">Новинка</div>
+                        </div>
+                    </div>
+                    <div class="product-text">
+                        <h2 class="product-name">
+                            Респиратор (маска) KN95 FFP2
+                            без клапана
+                        </h2>
+                        <div class="rating"><img src="img/icons/stars.svg" alt=""> (23)</div>
+                        <div class="prices">
+                            <div class="price">180 ₽</div> 
+                            <div class="unsale">
+                                200 ₽
+                            </div> 
+                            <div class="sale">
+                                -10%
+                            </div>
+                        </div>
+                        <div class="amount-selects">
+                            <div class="item select">
+                                1 шт. 
+                            </div>
+                            <div class="item">
+                                5 шт. 
+                            </div>
+                            <div class="item">
+                                10 шт. 
+                            </div>
+                            <div class="item">
+                                ОПТ 
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="button product-buy">
+                                В корзину
+                                <img src="img/icons/shop-btn.svg" alt="">
+                            </a>
+                            <a href="#" class="product-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="slider-imgs">
+                        <div class="slide">
+                            <img src="img/product-img.png" alt="">
+                        </div>
+                        <div class="product-status">
+                            <div class="procents">
+                                -20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-text">
+                        <h2 class="product-name">
+                            Респиратор (маска) KN95 FFP2
+                            без клапана
+                        </h2>
+                        <div class="rating"><img src="img/icons/stars.svg" alt=""> (23)</div>
+                        <div class="prices">
+                            <div class="price">180 ₽</div> 
+                            <div class="unsale">
+                                200 ₽
+                            </div> 
+                            <div class="sale">
+                                -10%
+                            </div>
+                        </div>
+                        <div class="amount-selects">
+                            <div class="item select">
+                                1 шт. 
+                            </div>
+                            <div class="item">
+                                5 шт. 
+                            </div>
+                            <div class="item">
+                                10 шт. 
+                            </div>
+                            <div class="item">
+                                ОПТ 
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="button product-buy">
+                                В корзину
+                                <img src="img/icons/shop-btn.svg" alt="">
+                            </a>
+                            <a href="#" class="product-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="slider-imgs">
+                        <div class="slide">
+                            <img src="img/product-img.png" alt="">
+                        </div>
+                        <div class="product-status">
+                            <div class="new">Новинка</div>
+                        </div>
+                    </div>
+                    <div class="product-text">
+                        <h2 class="product-name">
+                            Респиратор (маска) KN95 FFP2
+                            без клапана
+                        </h2>
+                        <div class="rating"><img src="img/icons/stars.svg" alt=""> (23)</div>
+                        <div class="prices">
+                            <div class="price">180 ₽</div> 
+                            <div class="unsale">
+                                200 ₽
+                            </div> 
+                            <div class="sale">
+                                -10%
+                            </div>
+                        </div>
+                        <div class="amount-selects">
+                            <div class="item select">
+                                1 шт. 
+                            </div>
+                            <div class="item">
+                                5 шт. 
+                            </div>
+                            <div class="item">
+                                10 шт. 
+                            </div>
+                            <div class="item">
+                                ОПТ 
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="button product-buy">
+                                В корзину
+                                <img src="img/icons/shop-btn.svg" alt="">
+                            </a>
+                            <a href="#" class="product-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="slider-imgs">
+                        <div class="slide">
+                            <img src="img/product-img.png" alt="">
+                        </div>
+                        <div class="product-status">
+                            <div class="new">Новинка</div>
+                        </div>
+                    </div>
+                    <div class="product-text">
+                        <h2 class="product-name">
+                            Респиратор (маска) KN95 FFP2
+                            без клапана
+                        </h2>
+                        <div class="rating"><img src="img/icons/stars.svg" alt=""> (23)</div>
+                        <div class="prices">
+                            <div class="price">180 ₽</div> 
+                            <div class="unsale">
+                                200 ₽
+                            </div> 
+                            <div class="sale">
+                                -10%
+                            </div>
+                        </div>
+                        <div class="amount-selects">
+                            <div class="item select">
+                                1 шт. 
+                            </div>
+                            <div class="item">
+                                5 шт. 
+                            </div>
+                            <div class="item">
+                                10 шт. 
+                            </div>
+                            <div class="item">
+                                ОПТ 
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="button product-buy">
+                                В корзину
+                                <img src="img/icons/shop-btn.svg" alt="">
+                            </a>
+                            <a href="#" class="product-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-full d-flex align-items-center justify-content-center">
+                <a href="#" class="product-all">Все товары</a>
+            </div>
+        </div>
+    </section>
+    <section class="blogers">
+        <div class="container">
+            <h2 class="title">
+                Известные блогеры о нас
+            </h2>
+            <p class="description-s">
+                О нас говорят только хорошее
+            </p>
+            <div class="slider-wrap">
+                <div class="blogers-slider owl-carousel">
+                    <div class="slide">
+                        <div class="slide-preview">
+                            <div class="play-btn">
+                                <img src="img/icons/play.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-preview">
+                            <div class="play-btn">
+                                <img src="img/icons/play.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-preview">
+                            <div class="play-btn">
+                                <img src="img/icons/play.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-preview">
+                            <div class="play-btn">
+                                <img src="img/icons/play.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-prev">
+                        <svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0.0686374C12.7812 0.0686374 13.4286 0.715958 13.4286 1.49721V21.4972C13.4286 22.2785 12.7812 22.9258 12 22.9258C11.6205 22.9258 11.2634 22.7695 10.9955 22.5017L0.995536 12.5017C0.727679 12.2338 0.571429 11.8767 0.571429 11.4972C0.571429 11.1177 0.727679 10.7606 0.995536 10.4927L10.9955 0.492743C11.2634 0.224887 11.6205 0.0686374 12 0.0686374Z"/>
+                        </svg>
+                    </button>
+                    <button class="slider-next">
+                        <svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 0.0686374C1.21875 0.0686374 0.571428 0.715958 0.571428 1.49721V21.4972C0.571428 22.2785 1.21875 22.9258 2 22.9258C2.37946 22.9258 2.73661 22.7695 3.00446 22.5017L13.0045 12.5017C13.2723 12.2338 13.4286 11.8767 13.4286 11.4972C13.4286 11.1177 13.2723 10.7606 13.0045 10.4927L3.00446 0.492743C2.73661 0.224887 2.37946 0.0686374 2 0.0686374Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="container">
+            <div class="features-item">
+                <div class="features-info">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/icons/check.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                                Защита от пыли и микробов
+                            </h3>
+                            <p>
+                                Складная 3-х панельная конструкция обеспечивает надежное прилегание респиратора 3М для различных типов и форм лица, маска приспосабливается к движениям лица и устойчива к смятию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/icons/check.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                               Производство Великобритания (UK)
+                            </h3>
+                            <p>
+                                Продукция высочайшего качества от известного во всём мире бренда.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/icons/check.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                                FFP2 и FFP3
+                            </h3>
+                            <p>
+                                Наши респираторы обладают клапанами с наивысшими уровнями защиты. Очистка вдыхаемого воздуха до 99%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-video">
+                    <div class="play-btn">
+                        <img src="img/icons/play.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="features-item">
+                <div class="features-info">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/icons/check.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                                Защита от пыли и микробов
+                            </h3>
+                            <p>
+                                Складная 3-х панельная конструкция обеспечивает надежное прилегание респиратора 3М для различных типов и форм лица, маска приспосабливается к движениям лица и устойчива к смятию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/icons/check.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                               Производство Великобритания (UK)
+                            </h3>
+                            <p>
+                                Продукция высочайшего качества от известного во всём мире бренда.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/icons/check.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                                FFP2 и FFP3
+                            </h3>
+                            <p>
+                                Наши респираторы обладают клапанами с наивысшими уровнями защиты. Очистка вдыхаемого воздуха до 99%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-video">
+                    <div class="play-btn">
+                        <img src="img/icons/play.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="opt">
+        <div class="container">
+            <div class="opt-wrap">
+                <div class="opt-text">
+                    <h2 class="title">
+                        Крупный и мелкий опт
+                    </h2>
+                    <span>
+                        Гарантия лучшей цены
+                    </span>
+                    <p>
+                        Ознакомьтесь с <a href="#">Коммерческим предложением 3МАСКИ</a>. Являемся прямым импортером. Предоставим лучшие цены по любому объему, а так же работаем с НДС и без НДС. Для согласования скидок обратитесь к нашим менеджерам
+                    </p>
+                    <a href="#" class="button opt-cta">Заказать</a>
+                </div>
+                <div class="opt-img">
+                    <img src="img/opt-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="thanks">
+        <div class="container">
+            <h2 class="title">
+                Благодарственные письма
+            </h2>
+            <p class="description-s">
+                О нас говорят только хорошее
+            </p>
+            <div class="slider-wrap">
+                <div class="thanks-slider owl-carousel">
+                    <div class="slide">
+                        <div class="thanks-img">
+                            <img src="img/thanks-img.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="thanks-img">
+                            <img src="img/thanks-img.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="thanks-img">
+                            <img src="img/thanks-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="thslider-prev">
+                        <svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0.0686374C12.7812 0.0686374 13.4286 0.715958 13.4286 1.49721V21.4972C13.4286 22.2785 12.7812 22.9258 12 22.9258C11.6205 22.9258 11.2634 22.7695 10.9955 22.5017L0.995536 12.5017C0.727679 12.2338 0.571429 11.8767 0.571429 11.4972C0.571429 11.1177 0.727679 10.7606 0.995536 10.4927L10.9955 0.492743C11.2634 0.224887 11.6205 0.0686374 12 0.0686374Z"/>
+                        </svg>
+                    </button>
+                    <button class="thslider-next">
+                        <svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 0.0686374C1.21875 0.0686374 0.571428 0.715958 0.571428 1.49721V21.4972C0.571428 22.2785 1.21875 22.9258 2 22.9258C2.37946 22.9258 2.73661 22.7695 3.00446 22.5017L13.0045 12.5017C13.2723 12.2338 13.4286 11.8767 13.4286 11.4972C13.4286 11.1177 13.2723 10.7606 13.0045 10.4927L3.00446 0.492743C2.73661 0.224887 2.37946 0.0686374 2 0.0686374Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="container">
+            <h2 class="title">
+                Бесконтактная доставка
+                C Оплатой По Факту
+            </h2>
+            <p class="description-s">
+                Просто и удобно
+            </p>
+            <div class="delivery-list">
+                <div class="row justify-content-between align-items-start list-wrp">
+                    <div class="col-lg-3 item">
+                        <div class="delivery-item">
+                            <div class="num">01</div>
+                            <div class="text">
+                                <h3>
+                                    Заказ через сайт или по телефону
+                                </h3>
+                                <p>
+                                    Добавьте в корзину нужный вам товар или оформите заказ, позвонив на горячую линию
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 item">
+                        <div class="delivery-item">
+                            <div class="num">02</div>
+                            <div class="text">
+                                <h3>
+                                    Обработка заказа
+                                </h3>
+                                <p>
+                                    Менеджер обрабатывает заявку в течение 5 минут, для подтверждения заказа связывается с вами и уточняет точное количество, сроки и адрес поставки
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 item">
+                        <div class="delivery-item">
+                            <div class="num">03</div>
+                            <div class="text">
+                                <h3>
+                                    Стоимость доставки курьером в пределах МКАД — 350р.
+                                </h3>
+                                <p>
+                                    Доставка в день заказа по Москве и области, отправляем ТП СДЭК в течении 30 минут вы получаете ТРЕК-НОМЕР отслеживания.
+                                    Доставка в день заказа по Москве и области, отправляем ТП СДЭК в течении 30 минут вы получаете ТРЕК-НОМЕР отслеживания.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 item">
+                        <div class="delivery-item">
+                            <div class="num">04</div>
+                            <div class="text">
+                                <h3>
+                                    Получение и оплата
+                                </h3>
+                                <p>
+                                    Курьер привозит заказ в индивидуально запакованном курьерском пакете.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="button delivery-cta">Заказать</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between align-items-start">
+                <div class="col-lg-4">
+                    <div class="contacts">
+                        <h4 class="footer-title">контакты</h4>
+                        <div class="item">
+                            <h5>
+                                <img src="img/icons/map-mark.svg" alt="">
+                                Наш адрес
+                            </h2>
+                            <a href="#" target="_blank">
+                                Московская обл., Мытищи, Шараповский пр-д, 7 <br>
+                                Санкт-Петербург, ул.Федора Абрамова, д.18
+                            </a>
+                        </div>
+                        <div class="item">
+                            <h5>
+                                <img src="img/icons/phone.svg" alt="">
+                                Наш телефон
+                            </h2>
+                            <a href="tel:8 (499) 322-76-55">
+                                8 (499) 322-76-55
+                            </a>
+                        </div>
+                        <div class="item">
+                            <h5>
+                                <img src="img/icons/mail.svg" alt="">
+                                Наша почта
+                            </h2>
+                            <a href="mailto: info@3maski.ru">
+                                 info@3maski.ru
+                            </a>
+                        </div>
+                        <div class="payments">
+                            <img src="img/payments.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about">
+                        <h4 class="footer-title">о магазине</h4>
+                        <p class="text-block">
+                            Специализированный магазин сертифицированных, оригинальных защитных материалов <br> для органов дыхания и защиты от вируса COVID-19
+                        </p>
+                        <div class="boss">
+                            <h5>
+                                <img src="img/icons/boss-i.svg" alt="">
+                                ИП Седов Алексей Александрович
+                            </h2>
+                            <p>
+                                Для документов: 141018, Московская обл., г. Мытищи, ул. Лётная, 21/2, кв. 237 (только <br>простыми письмами ) <br>
+                                Свидетельство о гос. регистрации 37003766773 <br>
+                                ИНН 344692125024 <br>
+                                ОГРНИП 312346007200046 <br>
+                            </p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="footer-certificate">
+                        <img src="img/footer-certificate.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
