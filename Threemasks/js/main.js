@@ -1,11 +1,21 @@
 $(document).ready(function(){
 	$('.blogers-slider').owlCarousel({
 		items: 3,
-		nav: true,
+		nav: false,
 		center: true,
 		dots: true,
 		loop: true,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive : {
+		    // breakpoint from 0 up
+		    320 : {
+		        items: 1,
+		        
+		    },
+		    1200 : {
+		    	items: 3,
+		    }
+		}
 	});
 
 	var owl=$(".blogers-slider");
@@ -20,11 +30,21 @@ $(document).ready(function(){
 
 	$('.thanks-slider').owlCarousel({
 		items: 3,
-		nav: true,
+		nav: false,
 		center: true,
 		dots: false,
 		loop: true,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive : {
+		    // breakpoint from 0 up
+		    320 : {
+		        items: 1,
+		        
+		    },
+		    1200 : {
+		    	items: 3,
+		    }
+		}
 	});
 
 	var owl=$(".thanks-slider");
