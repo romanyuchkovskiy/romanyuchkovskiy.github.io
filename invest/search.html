@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon/fav-logo.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 col-xl-2">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 d-none d-lg-block">
+                        <ul class="nav-items">
+                            <li class="item">
+                                <a href="contacts.html" class="link">Контакты</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Блог</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Размещение</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Поиск компаний</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 d-none d-lg-block">
+                        <div class="nav-cta">
+                            <a href="#" class="button nav-button">Инвестировать</a>
+                        </div>
+                    </div>
+                    <div class="col-2 d-block d-md-none">
+                        <div class="mobile-btn" id="mobileOpen">
+                            <img src="img/icons/mobile-menu.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-close" id="mobileClose">
+                        <img src="img/icons/mobile-close.svg" alt="">
+                    </div>
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <ul class="nav-items">
+                            <li class="item">
+                                <a href="contacts.html" class="link">Контакты</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Блог</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Размещение</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Поиск компаний</a>
+                            </li>
+                        </ul>
+                        <div class="nav-cta">
+                            <a href="#" class="button nav-button">Инвестировать</a>
+                        </div>
+                        <div class="socials">
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/fb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/linkedin.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="search">
+        <h1 class="visually-hidden">
+            Страница поиска
+        </h1>
+        <div class="container">
+            <form class="search-wrapper">
+                <div class="row align-items-start justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="search-block">
+                            <h2 class="section-title">
+                                Поиск компаний
+                            </h2>
+                            <h3 class="search-subtitle">
+                                Поиск по названию компании
+                            </h3>
+                            <div class="search-input__box">
+                                <input type="search" class="search-input" placeholder="Поиск по названию компании">
+                            </div>
+                            <div class="search-selects">
+                                <h3 class="search-subtitle">
+                                    Сферы бизнеса и инвестиций
+                                </h3>
+                                <select name="" id="" class="search-select">
+                                    <option value="2e22">Сфера инвестиций</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                </select>
+                                <select name="" id="" class="search-select">
+                                    <option value="2e22">Сфера бизнеса</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                    <option value="2e22">dwdwdwwd</option>
+                                </select>
+                            </div>
+                            <div class="search-filters d-block d-md-none">
+                                <h2 class="section-title">
+                                    Фильтр компаний
+                                </h2>
+                                <div class="search-filters__items">
+                                    <div class="search-filters__item">
+                                        <h3 class="search-subtitle">
+                                            Надежность компаний
+                                        </h3>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="reliableCompanies1">
+                                            <label for="reliableCompanies1">
+                                                Надежные компании
+                                            </label>
+                                        </div>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="riskyCompanies1">
+                                            <label for="riskyCompanies1">
+                                                Рискованные компании
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="search-filters__item">
+                                        <h3 class="search-subtitle">
+                                            Релеватность компаний
+                                        </h3>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="newCompaniesFirst1">
+                                            <label for="newCompaniesFirst1">
+                                                Сначала новые компании
+                                            </label>
+                                        </div>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="recommendedCompanies1">
+                                            <label for="recommendedCompanies1">
+                                                Рекомендуемые компании
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="search-filters__item">
+                                        <h3 class="search-subtitle">
+                                            Суммы инвестиций
+                                        </h3>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="minimumBets1">
+                                            <label for="minimumBets1">
+                                                Минимальные ставки
+                                            </label>
+                                        </div>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="maximumBets1">
+                                            <label for="maximumBets1">
+                                                Максимальные ставки
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="search-filters__item">
+                                        <h3 class="search-subtitle">
+                                            Размер компании
+                                        </h3>
+                                        <div class="search-checkbox__wrap">
+                                            <input type="checkbox" class="search-custom-checkbox" id="onlyBigCompanies1">
+                                            <label for="onlyBigCompanies1">
+                                                Только крупные компании
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="button search-button">
+                                Применить поиск (194)
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="search-filters d-none d-md-block">
+                            <h2 class="section-title">
+                                Фильтр компаний
+                            </h2>
+                            <div class="search-filters__items">
+                                <div class="search-filters__item">
+                                    <h3 class="search-subtitle">
+                                        Надежность компаний
+                                    </h3>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="reliableCompanies">
+                                        <label for="reliableCompanies">
+                                            Надежные компании
+                                        </label>
+                                    </div>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="riskyCompanies">
+                                        <label for="riskyCompanies">
+                                            Рискованные компании
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-filters__item">
+                                    <h3 class="search-subtitle">
+                                        Релеватность компаний
+                                    </h3>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="newCompaniesFirst">
+                                        <label for="newCompaniesFirst">
+                                            Сначала новые компании
+                                        </label>
+                                    </div>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="recommendedCompanies">
+                                        <label for="recommendedCompanies">
+                                            Рекомендуемые компании
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-filters__item">
+                                    <h3 class="search-subtitle">
+                                        Суммы инвестиций
+                                    </h3>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="minimumBets">
+                                        <label for="minimumBets">
+                                            Минимальные ставки
+                                        </label>
+                                    </div>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="maximumBets">
+                                        <label for="maximumBets">
+                                            Максимальные ставки
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-filters__item">
+                                    <h3 class="search-subtitle">
+                                        Размер компании
+                                    </h3>
+                                    <div class="search-checkbox__wrap">
+                                        <input type="checkbox" class="search-custom-checkbox" id="onlyBigCompanies">
+                                        <label for="onlyBigCompanies">
+                                            Только крупные компании
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-option">
+                            <div class="search-checkbox__wrap">
+                                <input type="checkbox" class="search-custom-checkbox" id="smallMiddleBusiness">
+                                <label for="smallMiddleBusiness">
+                                    Малый и средний бизнес (повыешнный риск)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-xl-6">
+                    <div class="footer-text">
+                        <div class="d-flex justify-content-center justify-content-xl-between align-items-start flex-wrap">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <div class="d-none d-md-flex align-items-start">
+                                <div class="sitemap">
+                                    <h5 class="footer-title">
+                                        Карта сайта
+                                    </h5>
+                                    <a href="#">Все компании</a>
+                                    <a href="#">Контакты</a>
+                                    <a href="#">Блог</a>
+                                    <a href="#">Размещение</a>
+                                </div>
+                                <div class="footer-contacts">
+                                    <h5 class="footer-title">
+                                        Контакты
+                                    </h5>
+                                    <a href="#" class="phone">+7 (707) 889-92-62</a>
+                                    <p class="addres">Назарбаева проспект, 128</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="footer-lead">
+                        <h5>
+                            Подпиштесь на самые актуальные новсти инвестиционного рынка
+                        </h5>
+                        <form action="" class="footer-form">
+                            <input type="email" class="footer-input" placeholder="Введите ваш E-mail">
+                            <button class="button footer-form__button">Оформить подписку</button>
+                        </form>
+                    </div>
+                    <div class="d-flex d-md-none justify-content-between align-items-start">
+                        <div class="sitemap">
+                            <h5 class="footer-title">
+                                Карта сайта
+                            </h5>
+                            <a href="#">Все компании</a>
+                            <a href="#">Контакты</a>
+                            <a href="#">Блог</a>
+                            <a href="#">Размещение</a>
+                        </div>
+                        <div class="footer-contacts">
+                            <h5 class="footer-title">
+                                Контакты
+                            </h5>
+                            <a href="#" class="phone">+7 (707) 889-92-62</a>
+                            <p class="addres">Назарбаева проспект, 128</p>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2020 Investmarket.kz Все права защищены.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

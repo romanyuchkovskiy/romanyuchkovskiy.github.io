@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon/fav-logo.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 col-xl-2">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 d-none d-lg-block">
+                        <ul class="nav-items">
+                            <li class="item">
+                                <a href="contacts.html" class="link">Контакты</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Блог</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Размещение</a>
+                            </li>
+                            <li class="item">
+                                <a href="search.html" class="link">Поиск компаний</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 d-none d-lg-block">
+                        <div class="nav-cta">
+                            <a href="#" class="button nav-button">Инвестировать</a>
+                        </div>
+                    </div>
+                    <div class="col-2 d-block d-md-none">
+                        <div class="mobile-btn" id="mobileOpen">
+                            <img src="img/icons/mobile-menu.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-close" id="mobileClose">
+                        <img src="img/icons/mobile-close.svg" alt="">
+                    </div>
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <ul class="nav-items">
+                            <li class="item">
+                                <a href="contacts.html" class="link">Контакты</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Блог</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Размещение</a>
+                            </li>
+                            <li class="item">
+                                <a href="search.html" class="link">Поиск компаний</a>
+                            </li>
+                        </ul>
+                        <div class="nav-cta">
+                            <a href="#" class="button nav-button">Инвестировать</a>
+                        </div>
+                        <div class="socials">
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/fb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/linkedin.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="enterprice">
+        <div class="container">
+            <div class="semicircle-green anim-item">
+                <img src="img/decor/semicircle-green.png" alt="">
+            </div>
+            <div class="enterprice-head">
+                <h2 class="section-title">
+                    Корпоративные <span>продукты и инструменты</span>
+                </h2>
+                <div class="enterprice-nav d-none d-lg-flex">
+                    <button class="enterprice-nav__prev">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.50472 8.69221C0.114195 8.30169 0.114195 7.66852 0.50472 7.278L6.86868 0.91404C7.2592 0.523515 7.89237 0.523515 8.28289 0.91404C8.67342 1.30456 8.67342 1.93773 8.28289 2.32825L2.62604 7.98511L8.28289 13.642C8.67342 14.0325 8.67342 14.6657 8.28289 15.0562C7.89237 15.4467 7.2592 15.4467 6.86868 15.0562L0.50472 8.69221ZM15.9516 8.98511H1.21183V6.98511H15.9516V8.98511Z"/>
+                        </svg>
+                    </button>
+                    <button class="enterprice-nav__next">
+                        <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7669 8.69221C16.1574 8.30169 16.1574 7.66852 15.7669 7.278L9.40293 0.91404C9.0124 0.523515 8.37924 0.523515 7.98871 0.91404C7.59819 1.30456 7.59819 1.93773 7.98871 2.32825L13.6456 7.98511L7.98871 13.642C7.59819 14.0325 7.59819 14.6657 7.98871 15.0562C8.37924 15.4467 9.0124 15.4467 9.40293 15.0562L15.7669 8.69221ZM0.320007 8.98511H15.0598V6.98511H0.320007V8.98511Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="enterprice-slider">
+                <div class="swiper-container swiper-enterprice">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="enterprice-slide">
+                                <div class="enterprice-logo">
+                                    <img src="img/kaspi-bank.svg" alt="kaspi-bank">
+                                </div>
+                                <h3>
+                                    Доходность
+                                </h3>
+                                <div class="procent">
+                                    15%
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh facilisi faucibus vestibulum condimentum sagittis aliquet 
+                                </p>
+                                <a href="#" class="button-o enterprice-button">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="enterprice-slide">
+                                <div class="enterprice-logo">
+                                    <img src="img/kaspi-bank.svg" alt="kaspi-bank">
+                                </div>
+                                <h3>
+                                    Доходность
+                                </h3>
+                                <div class="procent">
+                                    15%
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh facilisi faucibus vestibulum condimentum sagittis aliquet 
+                                </p>
+                                <a href="#" class="button-o enterprice-button">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="enterprice-slide">
+                                <div class="enterprice-logo">
+                                    <img src="img/kaspi-bank.svg" alt="kaspi-bank">
+                                </div>
+                                <h3>
+                                    Доходность
+                                </h3>
+                                <div class="procent">
+                                    15%
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh facilisi faucibus vestibulum condimentum sagittis aliquet 
+                                </p>
+                                <a href="#" class="button-o enterprice-button">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="enterprice-slide">
+                                <div class="enterprice-logo">
+                                    <img src="img/kaspi-bank.svg" alt="kaspi-bank">
+                                </div>
+                                <h3>
+                                    Доходность
+                                </h3>
+                                <div class="procent">
+                                    15%
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh facilisi faucibus vestibulum condimentum sagittis aliquet 
+                                </p>
+                                <a href="#" class="button-o enterprice-button">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="enterprice-slide">
+                                <div class="enterprice-logo">
+                                    <img src="img/kaspi-bank.svg" alt="kaspi-bank">
+                                </div>
+                                <h3>
+                                    Доходность
+                                </h3>
+                                <div class="procent">
+                                    15%
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh facilisi faucibus vestibulum condimentum sagittis aliquet 
+                                </p>
+                                <a href="#" class="button-o enterprice-button">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="enterprice-slide">
+                                <div class="enterprice-logo">
+                                    <img src="img/kaspi-bank.svg" alt="kaspi-bank">
+                                </div>
+                                <h3>
+                                    Доходность
+                                </h3>
+                                <div class="procent">
+                                    15%
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh facilisi faucibus vestibulum condimentum sagittis aliquet 
+                                </p>
+                                <a href="#" class="button-o enterprice-button">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="swiper-pagination"></div>
+
+                   
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    
+                    <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+            <div class="square-blue anim-item">
+                <img src="img/decor/square-blue.png" alt="">
+            </div>
+            <div class="square-green anim-item">
+                <img src="img/decor/square-green.png" alt="">
+            </div>
+            <div class="enterprice-nav d-flex d-md-none">
+                <button class="enterprice-nav__prev">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.50472 8.69221C0.114195 8.30169 0.114195 7.66852 0.50472 7.278L6.86868 0.91404C7.2592 0.523515 7.89237 0.523515 8.28289 0.91404C8.67342 1.30456 8.67342 1.93773 8.28289 2.32825L2.62604 7.98511L8.28289 13.642C8.67342 14.0325 8.67342 14.6657 8.28289 15.0562C7.89237 15.4467 7.2592 15.4467 6.86868 15.0562L0.50472 8.69221ZM15.9516 8.98511H1.21183V6.98511H15.9516V8.98511Z"/>
+                    </svg>
+                </button>
+                <button class="enterprice-nav__next">
+                    <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7669 8.69221C16.1574 8.30169 16.1574 7.66852 15.7669 7.278L9.40293 0.91404C9.0124 0.523515 8.37924 0.523515 7.98871 0.91404C7.59819 1.30456 7.59819 1.93773 7.98871 2.32825L13.6456 7.98511L7.98871 13.642C7.59819 14.0325 7.59819 14.6657 7.98871 15.0562C8.37924 15.4467 9.0124 15.4467 9.40293 15.0562L15.7669 8.69221ZM0.320007 8.98511H15.0598V6.98511H0.320007V8.98511Z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center">
+                <a href="#" class="button enterprice-more">
+                    Посмотреть все
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="investments">
+        <div class="container">
+            <div class="semicircle-blue anim-item">
+                <img src="img/decor/semicircle-blue.png" alt="">
+            </div>
+            <div class="row align-items-start justify-content-between">
+                <div class="col-xl-5">
+                    <h2 class="section-title">
+                        Инвестиции в <span>малый и средний бизнес</span>
+                    </h2>
+                    <div class="investments-text">
+                        <div class="item">
+                            <h3>
+                                Риски
+                            </h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt id pharetra velit placerat congue diam. Tempus, fusce commodo, augue morbi lectus morbi et. Ac fermentum tincidunt nullam lectus rhoncus, ac dolor. Dis nunc sollicitudin odio et in blandit eu mi.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <h3>
+                                Риски
+                            </h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt id pharetra velit placerat congue diam. Tempus, fusce commodo, augue morbi lectus morbi et. Ac fermentum tincidunt nullam lectus rhoncus, ac dolor. Dis nunc sollicitudin odio et in blandit eu mi.
+                            </p>
+                        </div>
+                        <a href="#" class="button investments-more d-none d-md-inline-flex">
+                            Смотреть все предложения
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="investments-slider">
+                        <div class="swiper-container swiper-investments">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="investments-slide">
+                                        <div class="head">
+                                            <div class="company-logo">
+                                                <img src="img/invest-caspi.svg" alt="kaspi-bank">
+                                            </div>
+                                        </div>
+                                        <div class="profitability d-flex align-items-center justify-content-between">
+                                            <p>Доходность</p>
+                                            <span>
+                                                36%
+                                            </span>
+                                        </div>
+                                        <div class="sphere d-flex align-items-center justify-content-between">
+                                            <p>
+                                                Сфера инвестиции
+                                            </p>
+                                            <p>
+                                                Банковские продукты
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="investments-slide">
+                                        <div class="head">
+                                            <div class="company-logo">
+                                                <img src="img/invest-caspi.svg" alt="kaspi-bank">
+                                            </div>
+                                        </div>
+                                        <div class="profitability d-flex align-items-center justify-content-between">
+                                            <p>Доходность</p>
+                                            <span>
+                                                36%
+                                            </span>
+                                        </div>
+                                        <div class="sphere d-flex align-items-center justify-content-between">
+                                            <p>
+                                                Сфера инвестиции
+                                            </p>
+                                            <p>
+                                                Банковские продукты
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="investments-slide">
+                                        <div class="head">
+                                            <div class="company-logo">
+                                                <img src="img/invest-caspi.svg" alt="kaspi-bank">
+                                            </div>
+                                        </div>
+                                        <div class="profitability d-flex align-items-center justify-content-between">
+                                            <p>Доходность</p>
+                                            <span>
+                                                36%
+                                            </span>
+                                        </div>
+                                        <div class="sphere d-flex align-items-center justify-content-between">
+                                            <p>
+                                                Сфера инвестиции
+                                            </p>
+                                            <p>
+                                                Банковские продукты
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="investments-slide">
+                                        <div class="head">
+                                            <div class="company-logo">
+                                                <img src="img/invest-caspi.svg" alt="kaspi-bank">
+                                            </div>
+                                        </div>
+                                        <div class="profitability d-flex align-items-center justify-content-between">
+                                            <p>Доходность</p>
+                                            <span>
+                                                36%
+                                            </span>
+                                        </div>
+                                        <div class="sphere d-flex align-items-center justify-content-between">
+                                            <p>
+                                                Сфера инвестиции
+                                            </p>
+                                            <p>
+                                                Банковские продукты
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="investments-slide">
+                                        <div class="head">
+                                            <div class="company-logo">
+                                                <img src="img/invest-caspi.svg" alt="kaspi-bank">
+                                            </div>
+                                        </div>
+                                        <div class="profitability d-flex align-items-center justify-content-between">
+                                            <p>Доходность</p>
+                                            <span>
+                                                36%
+                                            </span>
+                                        </div>
+                                        <div class="sphere d-flex align-items-center justify-content-between">
+                                            <p>
+                                                Сфера инвестиции
+                                            </p>
+                                            <p>
+                                                Банковские продукты
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar swiper-scrollbarInvestments"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="button investments-more d-inline-flex d-md-none">
+                        Смотреть все предложения
+                    </a>
+                </div>
+            </div>
+            <div class="square-blue anim-item">
+                <img src="img/decor/square-blue.png" alt="">
+            </div>
+            <div class="square-green anim-item">
+                <img src="img/decor/square-green.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">
+                <span>Investmarket.kz</span> – главная страница частного инвестора в Казахстане
+            </h2>
+            <div class="features-list">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-xl-4">
+                        <div class="features-item">
+                            <div class="icon">
+                                <img src="img/icons/features-1.svg" alt="">
+                            </div>
+                            <p class="description">
+                                Агрегатор лучших корпоративных инвест-продуктов
+                            </p>
+                        </div>
+                        <div class="semicircle-blue anim-item">
+                            <img src="img/decor/semicircle-blue.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="features-item">
+                            <div class="icon">
+                                <img src="img/icons/features-2.svg" alt="">
+                            </div>
+                            <p class="description">
+                                Список частных компаний привлекающих инвестиций
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="features-item">
+                            <div class="icon">
+                                <img src="img/icons/features-3.svg" alt="">
+                            </div>
+                            <p class="description">
+                                Более 12,000 частных инвесторов уже с нами
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="features-item">
+                            <div class="icon">
+                                <img src="img/icons/features-4.svg" alt="">
+                            </div>
+                            <p class="description">
+                                Бесплатная E-mail рассылка новых проектов и предложений
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="features-item">
+                            <div class="icon">
+                                <img src="img/icons/features-5.svg" alt="">
+                            </div>
+                            <p class="description">
+                                Блог по теме инвестирования в Казахстане
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="features-item">
+                            <div class="icon">
+                                <img src="img/icons/features-6.svg" alt="">
+                            </div>
+                            <p class="description">
+                                Предварительный аудит частных компаний
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="square-blue anim-item">
+                    <img src="img/decor/square-blue.png" alt="">
+                </div>
+
+                <div class="square-blue anim-item features-s">
+                    <img src="img/decor/square-blue.png" alt="">
+                </div>
+
+                <div class="semicircle-green anim-item">
+                    <img src="img/decor/semicircle-green.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-xl-6">
+                    <div class="subscribe-text">
+                        <h2>
+                            Подписка на рассылку
+                        </h2>
+                        <p>
+                            Подпишитесь на рассылку и получайте лучшие инвестиционные предложения первыми
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <form action="" class="subscribe-form">
+                        <input type="email" class="subscriber-input" placeholder="Введите ваш E-mail">
+                        <button class="button subscribe__button">Оформить подписку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="popular">
+        <div class="container">
+            <div class="popular-head d-flex align-items-center justify-content-between flex-wrap">
+                <h2 class="section-title">
+                    Популярные темы
+                </h2>
+                <div class="popular-nav">
+                    <button class="popular-nav__prev">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.50472 8.69221C0.114195 8.30169 0.114195 7.66852 0.50472 7.278L6.86868 0.91404C7.2592 0.523515 7.89237 0.523515 8.28289 0.91404C8.67342 1.30456 8.67342 1.93773 8.28289 2.32825L2.62604 7.98511L8.28289 13.642C8.67342 14.0325 8.67342 14.6657 8.28289 15.0562C7.89237 15.4467 7.2592 15.4467 6.86868 15.0562L0.50472 8.69221ZM15.9516 8.98511H1.21183V6.98511H15.9516V8.98511Z"/>
+                        </svg>
+                    </button>
+                    <button class="popular-nav__next">
+                        <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7669 8.69221C16.1574 8.30169 16.1574 7.66852 15.7669 7.278L9.40293 0.91404C9.0124 0.523515 8.37924 0.523515 7.98871 0.91404C7.59819 1.30456 7.59819 1.93773 7.98871 2.32825L13.6456 7.98511L7.98871 13.642C7.59819 14.0325 7.59819 14.6657 7.98871 15.0562C8.37924 15.4467 9.0124 15.4467 9.40293 15.0562L15.7669 8.69221ZM0.320007 8.98511H15.0598V6.98511H0.320007V8.98511Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="popular-slider">
+                
+            </div>
+        </div>
+    </section> -->
+    <section class="about">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-xl-5 order-2 order-xl-1">
+                    <div class="about-img">
+                        <div class="square-blue anim-item">
+                            <img src="img/decor/square-blue.png" alt="">
+                        </div>
+                        <img src="img/cartificate.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 order-1 order-xl-2">
+                    <div class="about-text">
+                        <div class="semicircle-blue anim-item">
+                            <img src="img/decor/semicircle-blue.png" alt="">
+                        </div>
+
+                        <div class="about-logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <h2 class="section-title">
+                            О компании
+                            <div class="square-green anim-item">
+                                <img src="img/decor/square-green.png" alt="">
+                            </div>
+                            <div class="semicircle-green anim-item">
+                                <img src="img/decor/semicircle-green.png" alt="">
+                            </div>
+                            
+                        </h2>
+                        <p class="about-description">
+                            <span>InvestMarket</span> – информационный портал про инвестиции и инвестиционные возможности в Казахстане. 
+                            <br>
+                            <br>
+                            Портал зарегистрирован в Международном Финансовом Центре Астана (МФЦА).
+                        </p>
+                        <a href="#" class="button about-more">Посмотреть все</a>
+
+
+
+                        <div class="square-green anim-item">
+                            <img src="img/decor/square-green.png" alt="">
+                        </div>
+
+                        <div class="square-blue anim-item">
+                            <img src="img/decor/square-blue.png" alt="">
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-xl-6">
+                    <div class="footer-text">
+                        <div class="d-flex justify-content-center justify-content-xl-between align-items-start flex-wrap">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <div class="d-none d-md-flex align-items-start">
+                                <div class="sitemap">
+                                    <h5 class="footer-title">
+                                        Карта сайта
+                                    </h5>
+                                    <a href="#">Все компании</a>
+                                    <a href="#">Контакты</a>
+                                    <a href="#">Блог</a>
+                                    <a href="#">Размещение</a>
+                                </div>
+                                <div class="footer-contacts">
+                                    <h5 class="footer-title">
+                                        Контакты
+                                    </h5>
+                                    <a href="#" class="phone">+7 (707) 889-92-62</a>
+                                    <p class="addres">Назарбаева проспект, 128</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="footer-lead">
+                        <h5>
+                            Подпиштесь на самые актуальные новсти инвестиционного рынка
+                        </h5>
+                        <form action="" class="footer-form">
+                            <input type="email" class="footer-input" placeholder="Введите ваш E-mail">
+                            <button class="button footer-form__button">Оформить подписку</button>
+                        </form>
+                    </div>
+                    <div class="d-flex d-md-none justify-content-between align-items-start">
+                        <div class="sitemap">
+                            <h5 class="footer-title">
+                                Карта сайта
+                            </h5>
+                            <a href="#">Все компании</a>
+                            <a href="#">Контакты</a>
+                            <a href="#">Блог</a>
+                            <a href="#">Размещение</a>
+                        </div>
+                        <div class="footer-contacts">
+                            <h5 class="footer-title">
+                                Контакты
+                            </h5>
+                            <a href="#" class="phone">+7 (707) 889-92-62</a>
+                            <p class="addres">Назарбаева проспект, 128</p>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2020 Investmarket.kz Все права защищены.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

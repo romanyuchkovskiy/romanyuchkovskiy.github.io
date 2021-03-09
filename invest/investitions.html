@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon/fav-logo.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 col-xl-2">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 d-none d-lg-block">
+                        <ul class="nav-items">
+                            <li class="item">
+                                <a href="contacts.html" class="link">Контакты</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Блог</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Размещение</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Поиск компаний</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 d-none d-lg-block">
+                        <div class="nav-cta">
+                            <a href="#" class="button nav-button">Инвестировать</a>
+                        </div>
+                    </div>
+                    <div class="col-2 d-block d-md-none">
+                        <div class="mobile-btn" id="mobileOpen">
+                            <img src="img/icons/mobile-menu.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-close" id="mobileClose">
+                        <img src="img/icons/mobile-close.svg" alt="">
+                    </div>
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <ul class="nav-items">
+                            <li class="item">
+                                <a href="contacts.html" class="link">Контакты</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Блог</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Размещение</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Поиск компаний</a>
+                            </li>
+                        </ul>
+                        <div class="nav-cta">
+                            <a href="#" class="button nav-button">Инвестировать</a>
+                        </div>
+                        <div class="socials">
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/fb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank" class="link">
+                                    <img src="img/icons/linkedin.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="investitions">
+        <div class="container">
+            <h1 class="section-title">
+                Инвестиционные <span>проекты</span>
+            </h1>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="investitionsInBusinessTab" data-toggle="tab" href="#investitionsInBusiness" role="tab" aria-controls="home" aria-selected="true">
+                        Инвестиции в бизнес
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="recommendedInvestmentTab" data-toggle="tab" href="#recommendedInvestment" role="tab" aria-controls="profile" aria-selected="false">
+                        Рекомендуемые инвестиции
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="investitions-modalSearchTab" data-toggle="tab" href="#investitions-modalSearch" role="tab" aria-controls="contact" aria-selected="false">
+                        Поиск компании
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="investitionsInBusiness" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="investitions-list">
+                        <div class="investitions-item">
+                            <a class="investitions-head" data-toggle="collapse" href="#investCollapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="d-flex align-items-center">
+                                    <div class="investitions-modal-logo">
+                                        <img src="img/invest-caspi.svg" alt="">
+                                    </div>
+                                    <p class="description">
+                                        Сфера инвестиции: <span>банковские продукты</span>
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="profitability">
+                                        <div class="procents">
+                                            <p>Доходность</p>
+                                            <span>36%</span>
+                                        </div>
+                                    </div>
+                                    <span class="arrow">
+                                        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 1.19133C0.683417 0.800806 1.31658 0.800806 1.70711 1.19133L7 6.48422L12.2929 1.19133C12.6834 0.800806 13.3166 0.800806 13.7071 1.19133C14.0976 1.58185 14.0976 2.21502 13.7071 2.60554L7.70711 8.60554C7.31658 8.99607 6.68342 8.99607 6.29289 8.60554L0.292893 2.60554C-0.0976311 2.21502 -0.0976311 1.58185 0.292893 1.19133Z" fill="#BFBFBF"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="collapse" id="investCollapse1">
+                                <div class="card card-body investitions-content">
+                                    <div class="d-block d-md-none">
+                                        <p class="description">
+                                            Сфера инвестиции: <span>банковские продукты</span>
+                                        </p>
+                                        <div class="profitability">
+                                            <div class="procents">
+                                                <p>Доходность</p>
+                                                <span>36%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue turpis ut tempus cras donec mi nisl tempor. Vitae ut nulla turpis nec pharetra quis. Purus nisl et eu viverra placerat tincidunt. Lorem metus, urna nisi, lectus tincidunt. Habitasse sit laoreet proin imperdiet urna, ipsum. Cursus sit suspendisse tortor nec etiam.
+                                    <br>
+                                    <br>
+                                    Euismod diam sed tincidunt mauris. Nisl vitae tellus mattis lacus, sed massa. Vel, viverra sodales ut ligula nulla tempus, convallis mattis eu. Ac ipsum nullam semper sit vel libero. 
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <a href="#" class="button-o investitions-details">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="investitions__window">
+                                <div class="container">
+                                    <div class="investitions-modal">
+                                        <div class="investitions-modal-close">
+                                            <img src="img/icons/invest-close.svg" alt="">
+                                        </div>
+                                        <div class="investitions-modal-wrapper">
+                                            <div class="row align-items-start justify-content-between">
+                                                <div class="col-xl-5">
+                                                    <div class="investitions-modal-main">
+                                                        <div class="head">
+                                                            <span class="investitions-modal-legend">
+                                                                Полное название
+                                                            </span>
+                                                            <div class="d-flex flex-wrap align-items-center">
+                                                                <h2 class="investitions-modal-name">
+                                                                    ООО «‎Название банка»‎
+                                                                </h2>
+                                                                <div class="investitions-modal-status">
+                                                                    Активна
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="items">
+                                                            <div class="item">
+                                                                <span class="investitions-modal-legend">
+                                                                    Годовая ставка
+                                                                </span>
+                                                                <p>
+                                                                    15%
+                                                                </p>
+                                                            </div>
+                                                            <div class="item">
+                                                                <span class="investitions-modal-legend">
+                                                                    Минимальная сумма
+                                                                </span>
+                                                                <p>50 000 тг</p>
+                                                            </div>
+                                                            <div class="item">
+                                                                <span class="investitions-modal-legend">
+                                                                    БИН
+                                                                </span>
+                                                                <p>1824701471</p>
+                                                            </div>
+                                                            <div class="item">
+                                                                <span class="investitions-modal-legend">
+                                                                    Сайт компании
+                                                                </span>
+                                                                <a target="_blank" href="https://www.bankrbk.kz/">
+                                                                    www.rbkbank.kz 
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="investitions-modal-additional">
+                                                        <div class="identifications">
+                                                            <div class="director">
+                                                                <span class="investitions-modal-legend">
+                                                                    Гендиректор
+                                                                </span>
+                                                                <p>Аскаров Аскар Аскарович</p>
+                                                            </div>
+                                                            <div class="personal-number">
+                                                                <span class="investitions-modal-legend">
+                                                                    БИН
+                                                                </span>
+                                                                <p>18247124970</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description">
+                                                            <span class="investitions-modal-legend">
+                                                                О компании
+                                                            </span>
+                                                            <p class="info__text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt id pharetra velit placerat congue diam. Tempus, fusce commodo, augue morbi lectus morbi et. Ac fermentum tincidunt nullam lectus rhoncus, ac dolor. Dis nunc sollicitudin odio et in blandit eu mi.
+                                                            </p>
+                                                            <a href="#" class="button investitions-modal-get__info">
+                                                                Получить полную информацию
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investitions-item">
+                            <a class="investitions-head" data-toggle="collapse" href="#investCollapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="d-flex align-items-center">
+                                    <div class="investitions-modal-logo">
+                                        <img src="img/invest-caspi.svg" alt="">
+                                    </div>
+                                    <p class="description">
+                                        Сфера инвестиции: <span>банковские продукты</span>
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="profitability">
+                                        <div class="procents">
+                                            <p>Доходность</p>
+                                            <span>36%</span>
+                                        </div>
+                                    </div>
+                                    <span class="arrow">
+                                        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 1.19133C0.683417 0.800806 1.31658 0.800806 1.70711 1.19133L7 6.48422L12.2929 1.19133C12.6834 0.800806 13.3166 0.800806 13.7071 1.19133C14.0976 1.58185 14.0976 2.21502 13.7071 2.60554L7.70711 8.60554C7.31658 8.99607 6.68342 8.99607 6.29289 8.60554L0.292893 2.60554C-0.0976311 2.21502 -0.0976311 1.58185 0.292893 1.19133Z" fill="#BFBFBF"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="collapse" id="investCollapse2">
+                                <div class="card card-body investitions-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue turpis ut tempus cras donec mi nisl tempor. Vitae ut nulla turpis nec pharetra quis. Purus nisl et eu viverra placerat tincidunt. Lorem metus, urna nisi, lectus tincidunt. Habitasse sit laoreet proin imperdiet urna, ipsum. Cursus sit suspendisse tortor nec etiam.
+                                    <br>
+                                    <br>
+                                    Euismod diam sed tincidunt mauris. Nisl vitae tellus mattis lacus, sed massa. Vel, viverra sodales ut ligula nulla tempus, convallis mattis eu. Ac ipsum nullam semper sit vel libero. 
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <a href="#" class="button-o investitions-details">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investitions-item">
+                            <a class="investitions-head" data-toggle="collapse" href="#investCollapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="d-flex align-items-center">
+                                    <div class="investitions-modal-logo">
+                                        <img src="img/invest-caspi.svg" alt="">
+                                    </div>
+                                    <p class="description">
+                                        Сфера инвестиции: <span>банковские продукты</span>
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="profitability">
+                                        <div class="procents">
+                                            <p>Доходность</p>
+                                            <span>36%</span>
+                                        </div>
+                                    </div>
+                                    <span class="arrow">
+                                        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 1.19133C0.683417 0.800806 1.31658 0.800806 1.70711 1.19133L7 6.48422L12.2929 1.19133C12.6834 0.800806 13.3166 0.800806 13.7071 1.19133C14.0976 1.58185 14.0976 2.21502 13.7071 2.60554L7.70711 8.60554C7.31658 8.99607 6.68342 8.99607 6.29289 8.60554L0.292893 2.60554C-0.0976311 2.21502 -0.0976311 1.58185 0.292893 1.19133Z" fill="#BFBFBF"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="collapse" id="investCollapse3">
+                                <div class="card card-body investitions-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue turpis ut tempus cras donec mi nisl tempor. Vitae ut nulla turpis nec pharetra quis. Purus nisl et eu viverra placerat tincidunt. Lorem metus, urna nisi, lectus tincidunt. Habitasse sit laoreet proin imperdiet urna, ipsum. Cursus sit suspendisse tortor nec etiam.
+                                    <br>
+                                    <br>
+                                    Euismod diam sed tincidunt mauris. Nisl vitae tellus mattis lacus, sed massa. Vel, viverra sodales ut ligula nulla tempus, convallis mattis eu. Ac ipsum nullam semper sit vel libero. 
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <a href="#" class="button-o investitions-details">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="button investitions-more">Показать еще</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="recommendedInvestment" role="tabpanel" aria-labelledby="profile-tab">    Рекомендуемые инвестиции
+                </div>
+                <div class="tab-pane fade" id="investitions-modalSearch" role="tabpanel" aria-labelledby="contact-tab">
+                    Поиск компании
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-xl-6">
+                    <div class="footer-text">
+                        <div class="d-flex justify-content-center justify-content-xl-between align-items-start flex-wrap">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <div class="d-none d-md-flex align-items-start">
+                                <div class="sitemap">
+                                    <h5 class="footer-title">
+                                        Карта сайта
+                                    </h5>
+                                    <a href="#">Все компании</a>
+                                    <a href="#">Контакты</a>
+                                    <a href="#">Блог</a>
+                                    <a href="#">Размещение</a>
+                                </div>
+                                <div class="footer-contacts">
+                                    <h5 class="footer-title">
+                                        Контакты
+                                    </h5>
+                                    <a href="#" class="phone">+7 (707) 889-92-62</a>
+                                    <p class="addres">Назарбаева проспект, 128</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="footer-lead">
+                        <h5>
+                            Подпиштесь на самые актуальные новсти инвестиционного рынка
+                        </h5>
+                        <form action="" class="footer-form">
+                            <input type="email" class="footer-input" placeholder="Введите ваш E-mail">
+                            <button class="button footer-form__button">Оформить подписку</button>
+                        </form>
+                    </div>
+                    <div class="d-flex d-md-none justify-content-between align-items-start">
+                        <div class="sitemap">
+                            <h5 class="footer-title">
+                                Карта сайта
+                            </h5>
+                            <a href="#">Все компании</a>
+                            <a href="#">Контакты</a>
+                            <a href="#">Блог</a>
+                            <a href="#">Размещение</a>
+                        </div>
+                        <div class="footer-contacts">
+                            <h5 class="footer-title">
+                                Контакты
+                            </h5>
+                            <a href="#" class="phone">+7 (707) 889-92-62</a>
+                            <p class="addres">Назарбаева проспект, 128</p>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2020 Investmarket.kz Все права защищены.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
