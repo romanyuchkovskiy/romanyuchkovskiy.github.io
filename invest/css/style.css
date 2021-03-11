@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff");
+  src: url("../../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy/Gilroy-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+  src: url("../../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-SemiBold.woff") format("woff");
+  src: url("../../fonts/Gilroy/Gilroy-SemiBold.woff2") format("woff2"), url("../../fonts/Gilroy/Gilroy-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -233,7 +233,7 @@ section {
   height: 100%;
   right: 0;
   bottom: 0;
-  background-image: url("../img/bg/hero-line.png");
+  background-image: url("../../img/bg/hero-line.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -443,6 +443,7 @@ section {
 
 .hero-card.six {
   margin-bottom: -50%;
+  z-index: 2;
 }
 
 .hero-card.eight {
@@ -479,7 +480,7 @@ section {
   }
   .hero::before {
     z-index: -2;
-    background-image: url("../img/bg/hero-line-m.png");
+    background-image: url("../../img/bg/hero-line-m.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -10%, 45%;
@@ -593,8 +594,16 @@ section {
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  .hero {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero-img {
     max-width: 233px;
+  }
+  .hero-img img {
+    max-width: 100%;
+    height: auto;
   }
   .hero-cards {
     -ms-flex-wrap: wrap;
@@ -618,7 +627,7 @@ section {
 
 @media only screen and (min-width: 1300px) and (max-width: 1500px) {
   .hero-img {
-    max-width: 233px;
+    margin-left: -2rem;
   }
 }
 
@@ -2200,7 +2209,7 @@ section {
   appearance: none;
   padding-bottom: 9px;
   border-bottom: 1px solid #0A2761;
-  background: url("../img/icons/search-icon.svg") no-repeat right 0.75rem center;
+  background: url("../../img/icons/search-icon.svg") no-repeat right 0.75rem center;
 }
 
 .search-input::-webkit-input-placeholder {
@@ -2241,7 +2250,7 @@ section {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("../img/icons/select-down.svg") no-repeat right 0.75rem center;
+  background: url("../../img/icons/select-down.svg") no-repeat right 0.75rem center;
 }
 
 .search-select:last-child {
@@ -2358,7 +2367,7 @@ section {
 .search .search-custom-checkbox:checked + label::before {
   background-color: #5FCF8A;
   border-color: #5FCF8A;
-  background-image: url("../img/icons/check.svg");
+  background-image: url("../../img/icons/check.svg");
   background-repeat: no-repeat;
   background-size: 100% 90%;
   -webkit-box-shadow: 0px 0px 13px 7px rgba(95, 207, 138, 0.35);
@@ -2461,13 +2470,13 @@ section {
 .search-fast .search-input {
   border-color: #ffffff;
   color: #ffffff;
-  background: url("../img/icons/search-icon-w.svg") no-repeat right 0.75rem center;
+  background: url("../../img/icons/search-icon-w.svg") no-repeat right 0.75rem center;
 }
 
 .search-fast .search-select {
   border-color: #ffffff;
   color: #ffffff;
-  background: url("../img/icons/select-down-w.svg") no-repeat right 0.75rem center;
+  background: url("../../img/icons/select-down-w.svg") no-repeat right 0.75rem center;
 }
 
 .search-fast .search-select option {
