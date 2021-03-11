@@ -432,13 +432,13 @@ section {
 }
 
 .hero-card.five:hover {
-  -webkit-transform: scale(1.1) !important;
-      -ms-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
+  -webkit-transform: scale(1.5) !important;
+      -ms-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
   right: 20%;
   bottom: -30%;
-  -webkit-filter: blur(0px) !important;
-          filter: blur(0px) !important;
+  -webkit-filter: none !important;
+          filter: none !important;
 }
 
 .hero-card.six {
@@ -477,6 +477,16 @@ section {
     padding-bottom: 20px;
     padding-top: 0;
   }
+  .hero::before {
+    z-index: -2;
+    background-image: url("../img/bg/hero-line-m.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -10%, 45%;
+  }
+  .hero .anim-item {
+    z-index: -4;
+  }
   .hero .semicircle-blue {
     bottom: 20%;
     right: 0;
@@ -492,83 +502,93 @@ section {
   }
   .hero-description {
     font-size: 16px;
-    margin-top: 35px;
+    margin-top: 5px;
     text-align: center;
+    max-width: 270px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-cta {
     width: 100%;
     margin-top: 30px;
   }
-  .hero-cards {
-    position: absolute;
-    z-index: 2;
-    bottom: 190px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 20px;
-    padding-bottom: 0;
-  }
-  .hero-cards:last-child {
-    display: none;
-  }
-  .hero-card {
-    margin-right: 1rem;
-    display: none;
-    width: 40%;
-    z-index: 2;
-  }
-  .hero-card:hover {
-    -webkit-transform: scale(1.2) !important;
-        -ms-transform: scale(1.2) !important;
-            transform: scale(1.2) !important;
-    z-index: 3;
-  }
-  .hero-card:nth-child(even) {
-    display: block;
-  }
-  .hero-card.three {
-    margin-top: -20%;
-  }
-  .hero-card.two {
-    display: block;
-    position: absolute;
-    top: -70%;
-    right: -10%;
-    -webkit-transform: scale(0.7) !important;
-        -ms-transform: scale(0.7) !important;
-            transform: scale(0.7) !important;
-  }
-  .hero-card.two:hover {
-    -webkit-transform: scale(1.2) !important;
-        -ms-transform: scale(1.2) !important;
-            transform: scale(1.2) !important;
-    right: 0;
-  }
-  .hero-card.six {
-    display: none;
-  }
-  .hero-card.four {
-    display: none;
-  }
-  .hero-card.five {
-    display: none;
-  }
-  .hero-card.eight {
-    display: none;
-  }
-  .hero-card.nine {
-    display: none;
-  }
-  .hero-img {
-    min-height: 353px;
-  }
   .hero-img img {
     max-width: 100%;
     height: auto;
+  }
+  .hero-cards {
+    position: absolute;
+    width: 100%;
+    z-index: 22;
+  }
+  .hero-card {
+    position: absolute;
+    width: 150px;
+  }
+  .hero-card:hover {
+    -webkit-animation: none !important;
+            animation: none !important;
+    right: 2% !important;
+    left: 2% !important;
+  }
+  .hero-card.m-one {
+    bottom: 40%;
+    -webkit-transform: rotate(-10deg) scale(0.7) !important;
+        -ms-transform: rotate(-10deg) scale(0.7) !important;
+            transform: rotate(-10deg) scale(0.7) !important;
+    -webkit-animation: heroBlock1 5s linear infinite;
+            animation: heroBlock1 5s linear infinite;
+  }
+  .hero-card.m-one:hover {
+    right: unset !important;
+    left: 0 !important;
+    margin-left: 15px;
+    -webkit-transform: rotate(0deg) scale(0.9) !important;
+        -ms-transform: rotate(0deg) scale(0.9) !important;
+            transform: rotate(0deg) scale(0.9) !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  .hero-card.m-two {
+    right: -20%;
+    bottom: -50%;
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-animation: heroBlock2 5s ease-in infinite;
+            animation: heroBlock2 5s ease-in infinite;
+  }
+  .hero-card.m-two:hover {
+    -webkit-transform: scale(1) !important;
+        -ms-transform: scale(1) !important;
+            transform: scale(1) !important;
+    left: unset !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  .hero-card.m-three {
+    top: 70%;
+    left: -20%;
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    -webkit-animation: heroBlock3 3s linear infinite;
+            animation: heroBlock3 3s linear infinite;
+  }
+  .hero-card.m-three:hover {
+    right: unset !important;
+    -webkit-transform: scale(1) !important;
+        -ms-transform: scale(1) !important;
+            transform: scale(1) !important;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    left: unset !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    margin-left: 25px;
   }
 }
 
@@ -2844,5 +2864,95 @@ section {
   100% {
     -webkit-transform: rotate(0deg) translate(0, 0);
             transform: rotate(0deg) translate(0, 0);
+  }
+}
+
+@-webkit-keyframes heroBlock1 {
+  0% {
+    left: -18%;
+  }
+  20% {
+    left: 4%;
+  }
+  50% {
+    left: 4%;
+  }
+  100% {
+    left: -18%;
+  }
+}
+
+@keyframes heroBlock1 {
+  0% {
+    left: -18%;
+  }
+  20% {
+    left: 4%;
+  }
+  50% {
+    left: 4%;
+  }
+  100% {
+    left: -18%;
+  }
+}
+
+@-webkit-keyframes heroBlock2 {
+  0% {
+    margin-right: 0;
+  }
+  20% {
+    margin-right: 2%;
+  }
+  50% {
+    margin-right: 12%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+@keyframes heroBlock2 {
+  0% {
+    margin-right: 0;
+  }
+  20% {
+    margin-right: 2%;
+  }
+  50% {
+    margin-right: 12%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+@-webkit-keyframes heroBlock3 {
+  0% {
+    left: -20%;
+  }
+  20% {
+    left: 5%;
+  }
+  50% {
+    left: 3%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+@keyframes heroBlock3 {
+  0% {
+    left: -20%;
+  }
+  20% {
+    left: 5%;
+  }
+  50% {
+    left: 3%;
+  }
+  100% {
+    left: -20%;
   }
 }
