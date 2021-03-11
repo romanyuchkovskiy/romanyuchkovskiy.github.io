@@ -209,11 +209,20 @@ section {
   color: #0A2761;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .hero {
-  padding-top: 0;
+  padding-top: 20px;
   padding-bottom: 187px;
   position: relative;
   z-index: 1;
+  background: -o-radial-gradient(48.86% 57.29%, 79.72% 39.62%, rgba(35, 110, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(79.72% 39.62% at 48.86% 57.29%, rgba(35, 110, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .hero::before {
@@ -325,7 +334,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 32px 20px;
+  padding: 32px 15px;
   background-color: #ffffff;
   border-radius: 15px;
   font-family: 'Gilroy';
@@ -333,19 +342,17 @@ section {
   -o-transition: all .2s;
   transition: all .2s;
   cursor: pointer;
-  width: 28%;
+  width: 124px;
   margin-right: 1.3rem;
 }
 
 .hero-card:hover {
   -webkit-box-shadow: 0px 41.4894px 51.8617px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 41.4894px 51.8617px rgba(0, 0, 0, 0.07);
-  -webkit-transform: translateY(-30px);
-      -ms-transform: translateY(-30px);
-          transform: translateY(-30px);
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.5) !important;
+      -ms-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
+  z-index: 2;
 }
 
 .hero-card h3 {
@@ -384,11 +391,18 @@ section {
           animation: hero 5s ease-in infinite;
 }
 
+.hero-card.two:hover {
+  -webkit-transform: scale(1.5) !important;
+      -ms-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
+}
+
 .hero-card.four {
   -webkit-transform: rotate(-5deg);
       -ms-transform: rotate(-5deg);
           transform: rotate(-5deg);
   margin-bottom: -40%;
+  margin-left: 40px;
   -webkit-animation: hero 5s ease-out infinite;
           animation: hero 5s ease-out infinite;
 }
@@ -397,18 +411,20 @@ section {
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.5) !important;
+      -ms-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
+  z-index: 2;
 }
 
 .hero-card.five {
   position: absolute;
   right: 18%;
-  bottom: -59%;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  bottom: -39%;
+  width: 130px;
+  -webkit-transform: scale(0.5) !important;
+      -ms-transform: scale(0.5) !important;
+          transform: scale(0.5) !important;
   -webkit-filter: blur(4px);
           filter: blur(4px);
   -webkit-animation: hero 5s ease-in infinite;
@@ -416,13 +432,13 @@ section {
 }
 
 .hero-card.five:hover {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1) !important;
+      -ms-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
   right: 20%;
   bottom: -30%;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+  -webkit-filter: blur(0px) !important;
+          filter: blur(0px) !important;
 }
 
 .hero-card.six {
@@ -433,25 +449,127 @@ section {
   margin-top: -30%;
   -webkit-filter: blur(4px);
           filter: blur(4px);
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
   position: absolute;
   right: 23%;
   -webkit-animation: hero 5s ease-in infinite;
           animation: hero 5s ease-in infinite;
+  -webkit-transform: scale(0.5) !important;
+      -ms-transform: scale(0.5) !important;
+          transform: scale(0.5) !important;
 }
 
 .hero-card.eight:hover {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+  -webkit-transform: scale(1.4) !important;
+      -ms-transform: scale(1.4) !important;
+          transform: scale(1.4) !important;
+  -webkit-filter: blur(0px) !important;
+          filter: blur(0px) !important;
 }
 
 .hero-card.nine {
   margin-bottom: -40%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .hero {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+  .hero .semicircle-blue {
+    bottom: 20%;
+    right: 0;
+    display: block !important;
+  }
+  .hero .semicircle-green {
+    bottom: 20%;
+    left: 0;
+    display: block !important;
+  }
+  .hero-title {
+    font-size: 24px;
+  }
+  .hero-description {
+    font-size: 16px;
+    margin-top: 35px;
+    text-align: center;
+  }
+  .hero-cta {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .hero-cards {
+    position: absolute;
+    z-index: 2;
+    bottom: 190px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+  .hero-cards:last-child {
+    display: none;
+  }
+  .hero-card {
+    margin-right: 1rem;
+    display: none;
+    width: 40%;
+    z-index: 2;
+  }
+  .hero-card:hover {
+    -webkit-transform: scale(1.2) !important;
+        -ms-transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
+    z-index: 3;
+  }
+  .hero-card:nth-child(even) {
+    display: block;
+  }
+  .hero-card.three {
+    margin-top: -20%;
+  }
+  .hero-card.two {
+    display: block;
+    position: absolute;
+    top: -70%;
+    right: -10%;
+    -webkit-transform: scale(0.7) !important;
+        -ms-transform: scale(0.7) !important;
+            transform: scale(0.7) !important;
+  }
+  .hero-card.two:hover {
+    -webkit-transform: scale(1.2) !important;
+        -ms-transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
+    right: 0;
+  }
+  .hero-card.six {
+    display: none;
+  }
+  .hero-card.four {
+    display: none;
+  }
+  .hero-card.five {
+    display: none;
+  }
+  .hero-card.eight {
+    display: none;
+  }
+  .hero-card.nine {
+    display: none;
+  }
+  .hero-img {
+    min-height: 353px;
+  }
+  .hero-img img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
@@ -489,7 +607,7 @@ section {
   overflow: hidden;
   padding-top: 72px;
   padding-bottom: 99px;
-  padding-top: 0;
+  padding-top: 40px;
 }
 
 .enterprice .semicircle-green {
@@ -2056,6 +2174,7 @@ section {
   color: #0A2761;
   width: 100%;
   border: none;
+  border-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
