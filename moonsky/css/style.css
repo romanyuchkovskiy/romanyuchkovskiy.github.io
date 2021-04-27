@@ -464,7 +464,7 @@ section {
 }
 
 .offer .of-it-m .offer-item__img {
-  background-image: url("../img/offer-mens-h.jpg");
+  background-image: url("../../img/offer-mens-h.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -475,7 +475,7 @@ section {
 }
 
 .offer .of-it-w .offer-item__img {
-  background-image: url("../img/offer-womens-h.jpg");
+  background-image: url("../../img/offer-womens-h.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1234,7 +1234,7 @@ section {
           transform: translateY(-50%);
   width: 8px;
   height: 10px;
-  background-image: url("../img/br-icon.svg");
+  background-image: url("../../img/br-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1321,7 +1321,7 @@ section {
   cursor: ew-resize;
   border-radius: 50px;
   background-color: #F9F9F9;
-  background-image: url("../img/flash.png");
+  background-image: url("../../img/flash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1334,7 +1334,7 @@ section {
   cursor: ew-resize;
   border-radius: 50px;
   background-color: #F9F9F9;
-  background-image: url("../img/flash.png");
+  background-image: url("../../img/flash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
