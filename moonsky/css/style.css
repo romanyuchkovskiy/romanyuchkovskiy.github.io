@@ -1411,12 +1411,22 @@ section {
   -webkit-transform: scale(0.9) !important;
       -ms-transform: scale(0.9) !important;
           transform: scale(0.9) !important;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .catalog .swiper-slide-prev {
   -webkit-transform: scale(0.9) !important;
       -ms-transform: scale(0.9) !important;
           transform: scale(0.9) !important;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .catalog .swiper-slide-duplicate {
@@ -1429,9 +1439,11 @@ section {
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
-  -webkit-transition: all .9s;
-  -o-transition: all .9s;
-  transition: all .9s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  -o-transition: transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 690px) {
@@ -1469,8 +1481,11 @@ section {
   .catalog .swiper-container {
     min-height: unset;
   }
+  .catalog .swiper-pagination-womans {
+    bottom: -52px !important;
+  }
   .catalog .swiper-pagination-mens {
-    bottom: -42px !important;
+    bottom: -52px !important;
   }
 }
 
@@ -1510,7 +1525,10 @@ section {
     min-height: unset;
   }
   .catalog .swiper-pagination-womans {
-    bottom: -42px !important;
+    bottom: -52px !important;
+  }
+  .catalog .swiper-pagination-mens {
+    bottom: -52px !important;
   }
 }
 
