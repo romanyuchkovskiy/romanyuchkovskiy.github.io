@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MoonSky</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon/fav-logo.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row justify-content-between justify-content-xl-start">
+                    <div class="col-8 col-md-4 col-xl-4">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-7 nav-wrp d-none d-md-none d-xl-block">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="mens.html" class="nav-link active">мужчины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="womens.html" class="nav-link">женщины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">о нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center d-md-block d-xl-none">
+                        <div class="mobile-open" id="mobileOpen">
+                            <svg viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-mobile" id="mobileMenu">
+                    <div class="nav-mobile__wrap">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                        </a>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="mens.html" class="nav-link">мужчины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="womens.html" class="nav-link">женщины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">о нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">контакты</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="catalog.html" class="btn nav-mobile__btn">
+                                Открыть каталог
+                            </a>
+                        </div>
+                        <div class="close" id="mobileClose">
+                            <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="catalog">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs-item">
+                    Мужчины
+                </li>
+            </ul>
+            <h1 class="page-title">
+                Мужская обувь
+            </h1>
+            <div class="catalog-marketplases">
+                <div class="item">
+                    <a href="#">
+                        <img src="img/catalog-ozon.svg" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/catalog-lamoda.svg" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/catalog-wb.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="col-xl-4">
+                    <div class="catalog-slider-speed womans-slider-speed">
+                        <input value="0" type="range" min="0" max="35" step="1" class="range-input catalogMensSpeed" oninput="changeSpeedCatMens()">
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-slider">
+                <div class="swiper-container swiper-catalog-mens">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-1.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-2.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-3.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-4.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-5.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-6.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog-slide">
+                                <div class="catalog-image">
+                                    <img src="img/catalog-mens/ct-mens-7.png" alt="">
+                                </div>          
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination swiper-pagination-mens">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-3">
+                    <div class="footer-logo">
+                        <img src="img/logo-f.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                мужчины
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                женщины
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                о нас
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                контакты
+                            </a>
+                        </li>                         
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="img/insta-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/insta-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/insta-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

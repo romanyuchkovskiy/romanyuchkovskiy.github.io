@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MoonSky</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon/fav-logo.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row justify-content-between justify-content-xl-start">
+                    <div class="col-8 col-md-4 col-xl-4">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-7 nav-wrp d-none d-md-none d-xl-block">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="mens.html" class="nav-link">мужчины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="womens.html" class="nav-link">женщины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">о нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center d-md-block d-xl-none">
+                        <div class="mobile-open" id="mobileOpen">
+                            <svg viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-mobile" id="mobileMenu">
+                    <div class="nav-mobile__wrap">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                        </a>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="mens.html" class="nav-link">мужчины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="womens.html" class="nav-link">женщины</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">о нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">контакты</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="catalog.html" class="btn nav-mobile__btn">
+                                Открыть каталог
+                            </a>
+                        </div>
+                        <div class="close" id="mobileClose">
+                            <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="offer">
+    	<div class="container">
+    		<div class="row align-items-center">
+    			<div class="col-md-12 col-xl-6">
+    				<div class="offer-text">
+    					<h1 class="offer-title">
+    						дух
+    						<span>hong kong</span>
+    						улиц
+    					</h1>
+    					<p class="offer-descr">
+    						живите дико
+    					</p>
+    					<a href="#" class="btn offer-btn">
+    						Открыть каталог
+    					</a>
+                        <div class="offer-img d-block d-md-block d-xl-none">
+                            <img src="img/offer-img.jpg" alt="">
+                        </div>
+    				</div>
+    			</div>
+    			<div class="col-xl-6 pl-xl-0 d-none d-md-block">
+    				<div class="offer-img">
+    					<img src="img/offer-img.jpg" alt="">
+    				</div>
+    			</div>
+                
+    		</div>
+            <div class="offer-items">
+                <div class="row justify-content-md-between">
+                    <div class="col-md-6 col-xl-6">
+                        <div class="offer-item of-it-m">
+                            <div class="offer-item__img">
+                                <img src="img/offer-mens.jpg" alt="">
+                            </div>
+                            <h2 class="offer-item__title">
+                                мужчины
+                            </h2>
+                            <div class="description">
+                                <h3>
+                                    мужчины
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                </p>
+                                <a href="#" class="btn offer-item__btn">Открыть каталог</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-6">
+                        <div class="offer-item of-it-w">
+                            <div class="offer-item__img">
+                                <img src="img/offer-womens.jpg" alt="">
+                            </div>
+                            <h2 class="offer-item__title">
+                                Женщины
+                            </h2>
+                            <div class="description">
+                                <h3>
+                                    Жещины
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                </p>
+                                <a href="#" class="btn offer-item__btn">Открыть каталог</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </section>
+    <section class="aboutB">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-xl-7 d-none d-md-block">
+                    <div class="aboutB-img">
+                        <img src="img/about-img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-5">
+                    <div class="aboutB-text">
+                        <div class="aboutB-img d-flex d-md-none">
+                            <img src="img/about-img.jpg" alt="">
+                        </div>
+                        <p class="section-spn">
+                            О компании
+                        </p>
+                        <h2 class="title">
+                            <span>hong kong</span>
+                            стиль и
+                            тенденции
+                        </h2>
+                        <p class="aboutB-descr">
+                            Мы являемся модным брендом из Гонконга, вдохновленным духом улиц и культурным наследием нашего города. В ассортименте бренда преобладают удобные вещи со спортивными деталями и уличной эстетикой. Наша коллекция отвечает всем потребностям современного и модного образа.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="container">
+            <div class="d-flex align-items-end justify-content-between">
+                <div class="popular-text">
+                    <p class="section-spn">
+                        популярные модели
+                    </p>
+                    <h2 class="title">
+                        мужчины
+                    </h2>
+                </div>
+                <div class="popular-nav nav-mens d-none d-md-flex">
+                    <button class="popular-nav__btn nav-mens__prev">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.439823 7.99996C0.439823 7.7132 0.549311 7.42649 0.767828 7.20786L7.64754 0.328226C8.08517 -0.109409 8.79472 -0.109409 9.23218 0.328226C9.66964 0.765684 9.66964 1.47509 9.23218 1.91276L3.14463 7.99996L9.23197 14.0872C9.66942 14.5248 9.66942 15.2342 9.23197 15.6716C8.79451 16.1094 8.08496 16.1094 7.64732 15.6716L0.767615 8.79205C0.549062 8.57332 0.439823 8.2866 0.439823 7.99996Z" fill="#272727"/>
+                        </svg>
+                    </button>
+                    <button class="popular-nav__btn nav-mens__next">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.56018 7.99996C9.56018 7.7132 9.45069 7.42649 9.23217 7.20786L2.35246 0.328226C1.91483 -0.109409 1.20528 -0.109409 0.767821 0.328226C0.330363 0.765684 0.330363 1.47509 0.767821 1.91276L6.85537 7.99996L0.768034 14.0872C0.330577 14.5248 0.330577 15.2342 0.768034 15.6716C1.20549 16.1094 1.91504 16.1094 2.35268 15.6716L9.23239 8.79205C9.45094 8.57332 9.56018 8.2866 9.56018 7.99996Z" fill="#272727"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="popular-slider">
+                <div class="swiper-container swiper-mens">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/mens/mens-home-s-1.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Мужские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/mens/mens-home-s-2.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Мужские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/mens/mens-home-s-3.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Мужские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/mens/mens-home-s-4.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Мужские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-nav nav-mens d-flex d-md-none">
+                <button class="popular-nav__btn nav-mens__prev">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.439823 7.99996C0.439823 7.7132 0.549311 7.42649 0.767828 7.20786L7.64754 0.328226C8.08517 -0.109409 8.79472 -0.109409 9.23218 0.328226C9.66964 0.765684 9.66964 1.47509 9.23218 1.91276L3.14463 7.99996L9.23197 14.0872C9.66942 14.5248 9.66942 15.2342 9.23197 15.6716C8.79451 16.1094 8.08496 16.1094 7.64732 15.6716L0.767615 8.79205C0.549062 8.57332 0.439823 8.2866 0.439823 7.99996Z" fill="#272727"/>
+                    </svg>
+                </button>
+                <button class="popular-nav__btn nav-mens__next">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.56018 7.99996C9.56018 7.7132 9.45069 7.42649 9.23217 7.20786L2.35246 0.328226C1.91483 -0.109409 1.20528 -0.109409 0.767821 0.328226C0.330363 0.765684 0.330363 1.47509 0.767821 1.91276L6.85537 7.99996L0.768034 14.0872C0.330577 14.5248 0.330577 15.2342 0.768034 15.6716C1.20549 16.1094 1.91504 16.1094 2.35268 15.6716L9.23239 8.79205C9.45094 8.57332 9.56018 8.2866 9.56018 7.99996Z" fill="#272727"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="container">
+            <div class="d-flex align-items-end justify-content-between">
+                <div class="popular-text">
+                    <p class="section-spn">
+                        популярные модели
+                    </p>
+                    <h2 class="title">
+                        женщины
+                    </h2>
+                </div>
+                <div class="popular-nav nav-womens d-none d-md-flex">
+                    <button class="popular-nav__btn nav-womens__prev">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.439823 7.99996C0.439823 7.7132 0.549311 7.42649 0.767828 7.20786L7.64754 0.328226C8.08517 -0.109409 8.79472 -0.109409 9.23218 0.328226C9.66964 0.765684 9.66964 1.47509 9.23218 1.91276L3.14463 7.99996L9.23197 14.0872C9.66942 14.5248 9.66942 15.2342 9.23197 15.6716C8.79451 16.1094 8.08496 16.1094 7.64732 15.6716L0.767615 8.79205C0.549062 8.57332 0.439823 8.2866 0.439823 7.99996Z" fill="#272727"/>
+                        </svg>
+                    </button>
+                    <button class="popular-nav__btn nav-womens__next">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.56018 7.99996C9.56018 7.7132 9.45069 7.42649 9.23217 7.20786L2.35246 0.328226C1.91483 -0.109409 1.20528 -0.109409 0.767821 0.328226C0.330363 0.765684 0.330363 1.47509 0.767821 1.91276L6.85537 7.99996L0.768034 14.0872C0.330577 14.5248 0.330577 15.2342 0.768034 15.6716C1.20549 16.1094 1.91504 16.1094 2.35268 15.6716L9.23239 8.79205C9.45094 8.57332 9.56018 8.2866 9.56018 7.99996Z" fill="#272727"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="popular-slider">
+                <div class="swiper-container swiper-womens">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/womens/womens-home-s-1.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Женские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/womens/womens-home-s-2.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Женские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/womens/womens-home-s-3.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Женские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="popular-slide">
+                                <div class="popular-slide__img">
+                                    <img src="img/womens/womens-home-s-4.jpg" alt="">
+                                </div>
+                                <h3 class="popular-slide__name">
+                                    Женские кроссовки
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-nav nav-womens d-flex d-md-none">
+                <button class="popular-nav__btn nav-womens__prev">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.439823 7.99996C0.439823 7.7132 0.549311 7.42649 0.767828 7.20786L7.64754 0.328226C8.08517 -0.109409 8.79472 -0.109409 9.23218 0.328226C9.66964 0.765684 9.66964 1.47509 9.23218 1.91276L3.14463 7.99996L9.23197 14.0872C9.66942 14.5248 9.66942 15.2342 9.23197 15.6716C8.79451 16.1094 8.08496 16.1094 7.64732 15.6716L0.767615 8.79205C0.549062 8.57332 0.439823 8.2866 0.439823 7.99996Z" fill="#272727"/>
+                    </svg>
+                </button>
+                <button class="popular-nav__btn nav-womens__next">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.56018 7.99996C9.56018 7.7132 9.45069 7.42649 9.23217 7.20786L2.35246 0.328226C1.91483 -0.109409 1.20528 -0.109409 0.767821 0.328226C0.330363 0.765684 0.330363 1.47509 0.767821 1.91276L6.85537 7.99996L0.768034 14.0872C0.330577 14.5248 0.330577 15.2342 0.768034 15.6716C1.20549 16.1094 1.91504 16.1094 2.35268 15.6716L9.23239 8.79205C9.45094 8.57332 9.56018 8.2866 9.56018 7.99996Z" fill="#272727"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="marketplace">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <div class="marketplace-text">
+                        <p class="section-spn">
+                            Где купить
+                        </p>
+                        <h2 class="title">
+                            мы на
+                            маркетплейс
+                        </h2>
+                        <div class="links">
+                            <a href="#" class="link">
+                                <img src="img/ozon.svg" alt="">
+                            </a>
+                            <a href="#" class="link">
+                                <img src="img/lamoda.svg" alt="">
+                            </a>
+                            <a href="#" class="link">
+                                <img src="img/wildberries.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="marketplace-img">
+                        <img src="img/marketplace-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="instawall">
+        <div class="container">
+            <p class="section-spn">
+                следите за нами
+            </p>
+            <h2 class="title">
+                INSTAWALL
+            </h2>
+            <div class="instawall-items">
+                <div class="row align-items-start justify-content-between">
+                    <div class="col-6 col-md-3 col-xl-3">
+                        <div class="instawall-item">
+                            <div class="instawall-img">
+                                <img src="img/inst-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3">
+                        <div class="instawall-item">
+                            <div class="instawall-img">
+                                <img src="img/inst-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3">
+                        <div class="instawall-item">
+                            <div class="instawall-img">
+                                <img src="img/inst-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3">
+                        <div class="instawall-item">
+                            <div class="instawall-img">
+                                <img src="img/inst-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <a href="#" class="btn instawall-btn">
+                    <img src="img/btn-inst.svg" alt="">
+                    перейти в instagram
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-center justify-content-xl-between">
+                <div class="col-xl-3">
+                    <div class="footer-logo">
+                        <img src="img/logo-f.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                мужчины
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                женщины
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                о нас
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">
+                                контакты
+                            </a>
+                        </li>                         
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="img/insta-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/insta-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/insta-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
