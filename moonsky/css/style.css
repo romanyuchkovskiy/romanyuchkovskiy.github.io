@@ -932,6 +932,9 @@ section {
           justify-content: center;
   margin-right: 30px;
   max-width: 170px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
 .marketplace-text .links .link:last-child {
@@ -941,6 +944,12 @@ section {
 .marketplace-text .links .link img {
   width: 100%;
   height: 100%;
+}
+
+.marketplace-text .links .link:hover {
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 .marketplace-img {
@@ -1322,7 +1331,7 @@ section {
   border-radius: 6px;
   width: 100%;
   height: 6px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.15, #EFBF48), color-stop(0.15, #E5E5E5));
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.15, #E5E5E5), color-stop(0.15, #EFBF48));
 }
 
 .catalog-slider-speed input[type='range']::-webkit-slider-thumb {
