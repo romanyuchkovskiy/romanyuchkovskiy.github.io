@@ -136,9 +136,11 @@ $(document).ready(function(){
       
       $(this).css('background-image',
                   '-webkit-gradient(linear, left top, right top, '
-                  + 'color-stop(' + val + ', #EFBF48), '
-                  + 'color-stop(' + val + ', #E5E5E5)'
+                  + 'color-stop(' + val + ', #E5E5E5), '
+                  + 'color-stop(' + val + ', #EFBF48)'
                   + ')'
                   );
   });
 });
+
+
