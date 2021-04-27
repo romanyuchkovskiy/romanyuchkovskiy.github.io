@@ -1256,6 +1256,20 @@ section {
   background-color: #EFBF48;
 }
 
+.catalog .swiper-pagination-mens {
+  bottom: -1px !important;
+}
+
+.catalog .swiper-pagination-mens .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #8e8c8c;
+}
+
+.catalog .swiper-pagination-mens .swiper-pagination-bullet-active {
+  background-color: #EFBF48;
+}
+
 .catalog .swiper-container {
   overflow: visible !important;
   min-height: 300px;
@@ -1320,7 +1334,7 @@ section {
   .catalog .swiper-container {
     min-height: unset;
   }
-  .catalog .swiper-pagination-womans {
+  .catalog .swiper-pagination-mens {
     bottom: -42px !important;
   }
 }
