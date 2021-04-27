@@ -7,11 +7,17 @@ const swiperMens = new Swiper('.swiper-mens', {
     nextEl: '.nav-mens__next',
     prevEl: '.nav-mens__prev',
   },
+  pagination: {
+    el: '.swiper-pagination-index-mens',
+    clickable: true,
+  },
   speed: 300,
   breakpoints: {
           320: {
             slidesPerView: 2,
             // spaceBetween: 1,
+            spaceBetween: 20,
+            navigation: false
           },
           578: {
             slidesPerView: 3,
@@ -23,6 +29,7 @@ const swiperMens = new Swiper('.swiper-mens', {
           },
         }
 });
+
 const swiperWoMens = new Swiper('.swiper-womens', {
   // Optional parameters
   direction: 'horizontal',
@@ -33,10 +40,15 @@ const swiperWoMens = new Swiper('.swiper-womens', {
     nextEl: '.nav-womens__next',
     prevEl: '.nav-womens__prev',
   },
+  pagination: {
+    el: '.swiper-pagination-index-womens',
+    clickable: true,
+  },
   breakpoints: {
           320: {
             slidesPerView: 2,
             // spaceBetween: 1,
+            spaceBetween: 20,
           },
           578: {
             slidesPerView: 3,
@@ -55,6 +67,7 @@ const swiperCatalogWoMens = new Swiper('.swiper-catalog-womens', {
   direction: 'horizontal',
   spaceBetween: 30,
   loop: true,
+  speed: 300,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination-womans',

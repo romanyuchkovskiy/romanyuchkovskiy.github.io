@@ -76,6 +76,13 @@ section {
   padding-right: 15px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 690px) {
+  section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
 .btn {
   font-size: 14px;
   font-weight: 500;
@@ -121,11 +128,12 @@ section {
   color: #EFBF48;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 625px) {
+@media only screen and (min-width: 320px) and (max-width: 690px) {
   .title {
     font-size: 35px;
   }
   .section-spn {
+    font-size: 11px;
     letter-spacing: 1.2em;
     line-height: 1.5;
   }
@@ -646,33 +654,17 @@ section {
   .aboutB {
     overflow: hidden;
   }
+  .aboutB-img {
+    max-height: 200px;
+  }
+  .aboutB-img img {
+    max-width: 100%;
+    height: auto;
+  }
   .aboutB-text {
     position: relative;
     z-index: 1;
-  }
-  .aboutB-img {
-    position: absolute;
-    min-height: 320px;
-    max-height: 420px;
-    z-index: -1;
-    right: -890px;
-    bottom: -200px;
-  }
-  .aboutB-img img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .aboutB-img::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    margin-bottom: 30px;
   }
   .aboutB-descr {
     color: #ffffff;
@@ -684,33 +676,14 @@ section {
   .aboutB {
     overflow: hidden;
   }
-  .aboutB-img {
-    position: absolute;
-    min-height: 320px;
-    max-height: 420px;
-    z-index: -1;
-    right: -890px;
-    bottom: -200px;
-  }
   .aboutB-img img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .aboutB-img::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    max-width: 100%;
+    height: auto;
   }
   .aboutB-text {
     position: relative;
     z-index: 1;
+    margin-bottom: 30px;
   }
   .aboutB-descr {
     color: #ffffff;
@@ -780,6 +753,36 @@ section {
 
 .popular-slider .swiper-container {
   overflow: visible !important;
+}
+
+.popular .swiper-pagination-index-womens {
+  display: none;
+  bottom: -41px !important;
+}
+
+.popular .swiper-pagination-index-womens .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #8e8c8c;
+}
+
+.popular .swiper-pagination-index-womens .swiper-pagination-bullet-active {
+  background-color: #EFBF48;
+}
+
+.popular .swiper-pagination-index-mens {
+  display: none;
+  bottom: -41px !important;
+}
+
+.popular .swiper-pagination-index-mens .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #8e8c8c;
+}
+
+.popular .swiper-pagination-index-mens .swiper-pagination-bullet-active {
+  background-color: #EFBF48;
 }
 
 .popular-slide {
@@ -862,6 +865,7 @@ section {
   .popular {
     padding-top: 50px;
     padding-bottom: 90px;
+    overflow: hidden;
   }
   .popular-nav {
     -webkit-box-pack: center;
@@ -870,6 +874,7 @@ section {
   }
   .popular-slider {
     margin-bottom: 40px;
+    overflow: visible;
   }
   .popular-slide {
     max-width: 92%;
@@ -879,6 +884,12 @@ section {
   }
   .popular-slide__name {
     font-size: 14px;
+  }
+  .popular .swiper-pagination-index-womens {
+    display: block;
+  }
+  .popular .swiper-pagination-index-mens {
+    display: block;
   }
 }
 
@@ -979,7 +990,7 @@ section {
     width: unset;
     height: unset;
     margin: 0;
-    margin-right: -20px;
+    margin-top: -20px;
   }
   .marketplace-img img {
     max-width: 100%;
@@ -995,13 +1006,14 @@ section {
             align-items: center;
   }
   .marketplace-text .links .link {
-    max-width: 170px;
+    max-width: 290px;
     margin-bottom: 20px;
     margin-right: 0;
+    height: 54px;
   }
   .marketplace-text .links .link img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -1451,6 +1463,12 @@ section {
     margin-top: 0;
     padding-top: 40px;
   }
+  .catalog .breadcrumbs {
+    margin-bottom: 35px;
+  }
+  .catalog h1 {
+    margin-bottom: 30px;
+  }
   .catalog-marketplases {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1463,7 +1481,7 @@ section {
   }
   .catalog-marketplases .item {
     width: 100%;
-    height: 90px;
+    height: 50px;
     margin-bottom: 20px;
   }
   .catalog-marketplases .item a {
@@ -1486,6 +1504,11 @@ section {
   }
   .catalog .swiper-pagination-mens {
     bottom: -52px !important;
+  }
+  .catalog .swiper-slide-active {
+    -webkit-transform: scale(1.8);
+        -ms-transform: scale(1.8);
+            transform: scale(1.8);
   }
 }
 
