@@ -11,6 +11,12 @@ body, html {
   background-color: #272727;
 }
 
+@media only screen and (min-width: 1150px) and (max-width: 1800px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
@@ -464,7 +470,7 @@ section {
 }
 
 .offer .of-it-m .offer-item__img {
-  background-image: url("../../img/offer-mens-h.jpg");
+  background-image: url("../img/offer-mens-h.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -475,7 +481,7 @@ section {
 }
 
 .offer .of-it-w .offer-item__img {
-  background-image: url("../../img/offer-womens-h.jpg");
+  background-image: url("../img/offer-womens-h.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -894,6 +900,7 @@ section {
 .marketplace {
   background-color: #EFBF48;
   padding: 120px 0px;
+  padding-bottom: 150px;
   position: relative;
 }
 
@@ -924,6 +931,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 30px;
+  max-width: 170px;
 }
 
 .marketplace-text .links .link:last-child {
@@ -939,7 +947,9 @@ section {
   margin-left: -120px;
   width: 959px;
   height: 725px;
-  margin-top: -320px;
+  position: absolute;
+  top: -460px;
+  right: -75%;
 }
 
 .marketplace-img img {
@@ -954,6 +964,9 @@ section {
   }
   .marketplace-img {
     margin-left: 0;
+    position: unset;
+    right: unset;
+    top: unset;
     width: unset;
     height: unset;
     margin: 0;
@@ -986,12 +999,14 @@ section {
 @media only screen and (min-width: 690px) and (max-width: 1200px) {
   .marketplace {
     padding-top: 50px;
-    overflow: hidden;
   }
   .marketplace-img {
     margin-left: 0;
     width: unset;
     height: unset;
+    position: unset;
+    right: unset;
+    top: unset;
     margin: 0;
     margin-right: -20px;
   }
@@ -1018,8 +1033,13 @@ section {
 }
 
 @media only screen and (min-width: 1150px) and (max-width: 1800px) {
-  .marketplace {
-    overflow: hidden;
+  .marketplace-img {
+    margin-left: -120px;
+    width: 892px;
+    height: 725px;
+    position: absolute;
+    top: -460px;
+    right: -59%;
   }
 }
 
@@ -1234,7 +1254,7 @@ section {
           transform: translateY(-50%);
   width: 8px;
   height: 10px;
-  background-image: url("../../img/br-icon.svg");
+  background-image: url("../img/br-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1321,7 +1341,7 @@ section {
   cursor: ew-resize;
   border-radius: 50px;
   background-color: #F9F9F9;
-  background-image: url("../../img/flash.png");
+  background-image: url("../img/flash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1334,7 +1354,7 @@ section {
   cursor: ew-resize;
   border-radius: 50px;
   background-color: #F9F9F9;
-  background-image: url("../../img/flash.png");
+  background-image: url("../img/flash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1400,6 +1420,9 @@ section {
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
+  -webkit-transition: all .9s;
+  -o-transition: all .9s;
+  transition: all .9s;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 690px) {
