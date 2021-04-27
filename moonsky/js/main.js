@@ -58,6 +58,11 @@ const swiperCatalogWoMens = new Swiper('.swiper-catalog-womens', {
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination-womans',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 800,
+    disableOnInteraction: false,
   },
   breakpoints: {
       320: {
@@ -82,6 +87,11 @@ const swiperCatalogMens = new Swiper('.swiper-catalog-mens', {
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination-mens',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 800,
+    disableOnInteraction: false,
   },
   breakpoints: {
       320: {
